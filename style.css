@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
- header{
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+header{
     display: flex;
     padding: 30px;
  }
@@ -32,6 +37,80 @@ header nav ul li a{
     line-height: 12px;
     padding: 15px 20px;
     
+}
+.hero-section{
+    background: url(img/Mask\ Group\ 17.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 657px;
+    width: 100%;
+}
+.search-area{
+   /* width: 713px;
+    height: 244px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.to-buy{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #FFFFFF;
+    background-color: #707070;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+}
+.to-rent{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #00A747;
+    background-color: #FFFFFF;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+}
+.search-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+.search-heading span{
+    color: #00A948;
+}
+.property-type{
+    width: 160px;
+    height: 49px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+}
+.form-controls{
+    background-color: #3D454E;
+    width: 713px;
+    height: 171px;
+    padding: 25px;  
+}
+.featured-rentals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.featured-rentals h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 14px;
+
+}
+.featured-rentals h1{
+    color: #00A747;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 34px;
+
 }
 
 
