@@ -112,6 +112,16 @@ header nav ul li a{
     font-size: 34px;
 
 }
+.card-heading{
+    color: #00A747;
+    font-weight: medium;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.rental-cards{
+    width: 24.625rem;
+    height: 481px;
+}
 
 
 
