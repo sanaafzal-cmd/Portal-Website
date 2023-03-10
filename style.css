@@ -3,7 +3,9 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 } 
+/*
 header{
     display: flex;
     padding: 30px;
@@ -16,6 +18,7 @@ header{
     display: flex;
     justify-content: center;
 }
+
 nav{
     flex: 0.99;
 }
@@ -38,13 +41,23 @@ header nav ul li a{
     padding: 15px 20px;
     
 }
-.hero-section{
+*/
+.navbar{
+    background-color: #ffffff !important;
+}
+.nav-link{
+    color: #00A948;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 20px !important;
+}
+.hero-section .container-fluid{
     background: url(img/Mask\ Group\ 17.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    height: 657px;
-    width: 100%;
+   height: 90vh;
+   background-size: contain;
+   background-attachment: scroll;
+   background-repeat: no-repeat;
+   
 }
 .search-area{
    /* width: 713px;
@@ -85,12 +98,37 @@ header nav ul li a{
     height: 49px;
     border-radius: 7px;
     background-color: #FFFFFF;
+    padding: 20px;
+    margin: 5px;
+}
+.location{
+    width: 510px;
+    height: 49px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 5px;
+}
+input[type="submit"]{
+    width: 160px;
+    height: 49px;
+    background-color: #00A747;
+    color: #ffffff;
+    border: none;
+    margin: 5px;
+
 }
 .form-controls{
     background-color: #3D454E;
-    width: 713px;
-    height: 171px;
-    padding: 25px;  
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+     
 }
 .featured-rentals{
     display: flex;
@@ -189,6 +227,13 @@ border: 1px solid #E0F5EE;
     font-size: 20px;
     font-weight: medium;
     color: #00A747;
+}
+.visit-toggle{
+    width: 291px;
+    height: 109px;
+    background-color: #ffffff;
+    border: 2px solid #00A747;
+    
 }
 
 
