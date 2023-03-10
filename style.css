@@ -51,8 +51,8 @@ header nav ul li a{
     font-weight: bold;
     padding: 15px 20px !important;
 }
-.hero-section .container-fluid{
-    background: url(img/Mask\ Group\ 17.png);
+.hero-section{
+    background: url(img/hero-img.png);
    height: 90vh;
    background-size: contain;
    background-attachment: scroll;
@@ -62,6 +62,7 @@ header nav ul li a{
 .search-area{
    /* width: 713px;
     height: 244px;*/
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,6 +142,7 @@ input[type="submit"]{
     font-family: 'Poppins', sans-serif;
     font-weight: medium;
     font-size: 14px;
+    color: #9A9A9A;
 
 }
 .featured-rentals h1{
@@ -148,6 +150,7 @@ input[type="submit"]{
     font-family: 'Poppins', sans-serif;
     font-weight: medium;
     font-size: 34px;
+    
 
 }
 .card-heading{
@@ -215,6 +218,22 @@ input[type="submit"]{
     font-size: 21px;
     font-weight: medium;
 }
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-container > div {
+    background-color: #00A747;
+   padding: 10px 25px;
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+   font-weight: medium;
+    font-size: 21px;
+  }
 .services-cat{
 border: 1px solid #E0F5EE;
 }
@@ -235,5 +254,7 @@ border: 1px solid #E0F5EE;
     border: 2px solid #00A747;
     
 }
+
+
 
 

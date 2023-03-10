@@ -14,3 +14,7 @@ function toggleDiv(divid)
         document.getElementById(varon).style.display = 'block';
     }
 }
+
+
+  
+    
