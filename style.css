@@ -131,7 +131,7 @@ input[type="submit"]{
     
      
 }
-.featured-rentals{
+.featured-rentals, .latest-rentals{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,8 +150,18 @@ input[type="submit"]{
     font-family: 'Poppins', sans-serif;
     font-weight: medium;
     font-size: 34px;
-    
-
+}
+.latest-rentals h1{
+    color: #00A747;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 34px;
+}
+.latest-rentals h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 14px;
+    color: #9A9A9A;
 }
 .card-heading{
     color: #00A747;
@@ -253,6 +263,11 @@ border: 1px solid #E0F5EE;
     background-color: #ffffff;
     border: 2px solid #00A747;
     
+}
+.owner-info{
+    background-color: #E0F5EE;
+    display: flex;
+    padding: 5px;
 }
 
 
