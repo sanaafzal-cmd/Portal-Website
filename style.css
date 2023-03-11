@@ -270,6 +270,114 @@ border: 1px solid #E0F5EE;
     padding: 5px;
 }
 
+/* Footer */
+@media (max-width: 1366px){
+    ._035521cc {
+        max-width: 1100px;
+    }
+}
+
+._035521cc {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: max-width .25s ease-in;
+    transition: max-width .25s ease-in;
+}
+.d29e163a {
+    max-width: 1200px;
+    height: 20.4rem;
+    background: url(/img/mobileAppsBackground.937eb86be98b3bde537276043aa8e3da.png) no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+    background-position-x: center;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bfe1194d, .eecc1d16 {
+    vertical-align: top;
+    width: 36rem;
+    margin: 2rem 0;
+}
+.e779da4e {
+    color: #00a651;
+    font-size: 2rem;
+    font-weight: 700;
+}
+._5005c3df {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 80%;
+    line-height: normal;
+}
+.bfe1194d, .eecc1d16 {
+    vertical-align: top;
+    width: 36rem;
+    margin: 2rem 0;
+}
+._0e2528e5 {
+    text-align: right;
+    margin-bottom: 2rem;
+}
+._40bad90a, ._99d01467 {
+    width: 13.2rem;
+    height: 4rem;
+    display: inline-block;
+}
+._99d01467 {
+    background: url(/img/app-store.png) 50%/contain no-repeat;
+    margin-right: 1rem;
+}
+._40bad90a {
+    background: url(/img/Google_Play-Badge-Logo.wine.png) 50%/contain no-repeat;
+}
+._40bad90a, ._99d01467 {
+    width: 13.2rem;
+    height: 4rem;
+    display: inline-block;
+}
+.d2e9372e, .eed449e1 {
+    display: inline-block;
+    vertical-align: top;
+}
+.e81f2a64 {
+    margin-left: auto;
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+    line-height: normal;
+}
+._8e9ddfc2 {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 0.3rem;
+    margin-left: auto;
+    margin-right: 1.7rem;
+    background-image: url(/assets/qrCodeArrow_noinline.bdbb701….svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+.d2e9372e {
+    background-image: url(/img/qr-code.png);
+    background-size: contain;
+    width: 8.4rem;
+    height: 8.4rem;
+}
+.d2e9372e, .eed449e1 {
+    display: inline-block;
+    vertical-align: top;
+}
+
 
 
 
