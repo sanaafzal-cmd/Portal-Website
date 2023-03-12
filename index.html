@@ -7,6 +7,7 @@
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -252,64 +253,113 @@
                 <div class="col-9 g-0">
                     <div class="container p-5" style="background-color: #00A747;">
                         <div class="row">
-                            <div class="col services-cat bg-light p-3">
-                                <div class="text-center">
-                                    <img src="img/marketplace.png" class="services-icons" alt="...">
-                                    <div class="service-heading p-2">Market Place</div>
-                                  </div>
-                            </div>
+                          
+                            <div class="col services-cat bg-light p-3" id="box1" onmouseover="toggleDiv()">
+                              <div class="text-center">
+                                  <img src="img/marketplace.png" class="services-icons" alt="...">
+                                  <div class="service-heading p-2">Market Place</div>
+                                </div>
+                          </div>
+                          <div class="col" style="display:none" id="box2"  onmouseout="toggleDiv()">
+                            <div class="visit-service">VISIT</div>
                            
-                            <div class="col services-cat bg-light p-3">
+
+                          </div>
+                         
+                          
+                           
+                           
+                            <div class="col services-cat bg-light p-3" class="box1" onmouseover="toggleDiv()" style="display:block">
                                 <div class="text-center">
                                     <img src="img/relocation-services.png" class="services-icons" alt="...">
                                   </div>
                                   <div class="service-heading p-2">Relocation Service</div>
                             </div>
-                            <div class="col services-cat bg-light p-3">
+                            <div class="col" style="display:none" class="box2"  onmouseout="toggleDiv()">
+                              <div class="visit-service">VISIT</div>
+                             
+  
+                            </div>
+                            <div class="col services-cat bg-light p-3" class="box1" onmouseover="toggleDiv()" style="display:block">
                                 <div class="text-center">
                                     <img src="img/insurance.png" class="services-icons" alt="...">
                                     <div class="service-heading p-2">Insurance</div>
                                   </div>
                             </div>
+                            <div class="col" style="display:none" class="box2"  onmouseout="toggleDiv()">
+                              <div class="visit-service">VISIT</div>
+                             
+  
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col services-cat bg-light p-3">
+                            <div class="col services-cat bg-light p-3" class="box1" onmouseover="toggleDiv()" style="display:block">
                                 <div class="text-center">
                                     <img src="img/rental report.png" class="services-icons" alt="...">
                                     <div class="service-heading p-2">Property Rental Report</div>
                                   </div>
                             </div>
-                            <div class="col services-cat bg-light p-3">
+                            <div class="col" style="display:none" class="box2"  onmouseout="toggleDiv()">
+                              <div class="visit-service">VISIT</div>
+                             
+  
+                            </div>
+                            <div class="col services-cat bg-light p-3" class="box1" onmouseover="toggleDiv()" style="display:block">
                                 <div class="text-center">
                                     <img src="img/community-service.png" class="services-icons" alt="...">
                                     <div class="service-heading p-2">Community Service</div>
                                   </div>
                             </div>
-                            <div class="col services-cat bg-light p-3">
+                            <div class="col" style="display:none" class="box2"  onmouseout="toggleDiv()">
+                              <div class="visit-service">VISIT</div>
+                             
+  
+                            </div>
+                            <div class="col services-cat bg-light p-3" class="box1" onmouseover="toggleDiv()" style="display:block">
                                 <div class="text-center">
                                     <img src="img/rental report.png" class="services-icons" alt="...">
                                     <div class="service-heading p-2">Rental Portal Service</div>
                                   </div>
                             </div>
+                            <div class="col" style="display:none" class="box2"  onmouseout="toggleDiv()">
+                              <div class="visit-service">VISIT</div>
+                             
+  
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col services-cat bg-light p-3">
+                            <div class="col services-cat bg-light p-3" class="box1" onmouseover="toggleDiv()" style="display:block">
                                 <div class="text-center">
                                     <img src="img/Mini House.I01.2k.png" class="services-icons" alt="...">
                                     <div class="service-heading p-2">Luxury Property</div>
                                   </div>
                             </div>
-                            <div class="col services-cat bg-light p-3">
+                            <div class="col" style="display:none" class="box2"  onmouseout="toggleDiv()">
+                              <div class="visit-service">VISIT</div>
+                             
+  
+                            </div>
+                            <div class="col services-cat bg-light p-3" class="box1" onmouseover="toggleDiv()" style="display:block">
                                 <div class="text-center">
                                     <img src="img/real-estate.png" class="services-icons" alt="...">
                                     <div class="service-heading p-2">Real Estate Consultant</div>
                                   </div>
                             </div>
-                            <div class="col services-cat bg-light p-3">
+                            <div class="col" style="display:none" class="box2"  onmouseout="toggleDiv()">
+                              <div class="visit-service">VISIT</div>
+                             
+  
+                            </div>
+                            <div class="col services-cat bg-light p-3" class="box1" onmouseover="toggleDiv()" style="display:block">
                                 <div class="text-center">
                                     <img src="img/airbnb (1).png" class="services-icons" alt="...">
                                     <div class="service-heading p-2">Real Estate Consultant</div>
                                   </div>
+                            </div>
+                            <div class="col" style="display:none" class="box2"  onmouseout="toggleDiv()">
+                              <div class="visit-service">VISIT</div>
+                             
+  
                             </div>
                         </div>
                     </div>
@@ -656,7 +706,8 @@
            </div>
     </section>
 
-    <section class="get-app">
+    <!--Footer-->
+    
       <div class="_2f01ad7d">
         <div class="_035521cc">
           <div class="lazyload-wrapper ">
@@ -684,9 +735,78 @@
           </div>
 
           <!--Our partners-->
-          <div class="_8b4880fe"><div class="_035521cc"><div class="_3cfee633"><div class="bb8c9385"><div class="_2cce6008">Our Home Partners</div><div class="_509724c2"><span class="_85f0c96b"><img src="/img/Mask Group 21.png" alt="HBL Bank" class="e2e28acc"></span><span class="_85f0c96b"><img src="/img/lineart_logo_letter_u_modern_color.png" alt="SCB Bank" class="e2e28acc"></span><span class="_85f0c96b"><img src="/img/preview.png" alt="JS Bank" class="e2e28acc"></span><span class="_85f0c96b"><img src="/img/Mask Group 19.png" alt="HBFC" class="e2e28acc"></span><span class="_85f0c96b"><img src="/img/Mask Group 20.png" alt="Habib Bank" class="e2e28acc"></span><span class="_85f0c96b"><img src="/assets/iconMCBBank_noinline.d28ad8d5728926601b6a885af7b731a3.svg" alt="MCB Bank" class="e2e28acc"></span></div></div></div></div></div>
+          <div class="_8b4880fe">
+            <div class="_035521cc">
+              <div class="_3cfee633">
+                <div class="bb8c9385">
+                  <div class="_2cce6008">Partners</div>
+                  <div class="_509724c2">
+                    <span class="_85f0c96b">
+                      <img src="/img/Mask Group 21.png" alt="HBL Bank" class="e2e28acc"></span>
+                      <span class="_85f0c96b">
+                        <img src="/img/lineart_logo_letter_u_modern_color.png" alt="SCB Bank" class="e2e28acc"></span>
+                        <span class="_85f0c96b">
+                          <img src="/img/preview.png" alt="JS Bank" class="e2e28acc"></span>
+                          <span class="_85f0c96b">
+                            <img src="/img/Mask Group 19.png" alt="HBFC" class="e2e28acc"></span>
+                            <span class="_85f0c96b">
+                              <img src="/img/Mask Group 20.png" alt="Habib Bank" class="e2e28acc"></span>
+                              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-    </section>
+       <!--Dark Footer-->
+       <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div style="color: #00A747; font-size: 2rem; font-weight: bold;" class="text-center">Property Baba <br>Logo</div>
+            <div class="p-3">Get in Touch</div>
+            <div class="phone p-3">07393939800</div>
+            <div class="email p-3">info@propertybaba.com</div>
+            <div class="address p-3">97 Vincent Drive, Birmingham B15 2SQ.</div>
+
+          </div>
+
+          <div class="col">
+            <div>Quick Links</div>
+            <div class="link-1">
+              <a>Home</a>
+               <a>Services</a>
+            </div>
+            <div class="link-2">
+              <a>Property</a>
+               <a>Contact Us</a>
+            </div>
+            <div class="link-3">
+              <a>Properties</a>
+               <a>About Us</a>
+            </div>
+               
+          </div>
+          <div class="col">
+            <div>Socials</div>
+            <div class="social-icons">
+              <img src="img/twitter.png">
+              <img src="img/facebook.png">
+              <img src="img/youtube.png">
+              <img src="img/instagram (1).png">
+            </div>
+            <div class="google-icons">
+              <img src="img/Google_Play-Badge-Logo.wine.png" width="143" height="42">
+              <img src="img/app-store.png" width="143" height="42" >
+            </div>
+          </div>
+        </div>
+
+      </div>
+       
+
+      </footer>
+    <!--Footer End-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
