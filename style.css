@@ -102,6 +102,7 @@ header nav ul li a{
     padding: 20px;
     margin: 5px;
 }
+
 .location{
     width: 510px;
     height: 49px;
@@ -427,10 +428,18 @@ border: 1px solid #E0F5EE;
     padding: 2.4rem 0;
 }
 ._2cce6008 {
-    color: #1f1f1f;
+    color: #00A747;
     font-size: 1.96rem;
-    font-weight: 700;
+    font-weight: medium;
     margin-bottom: 2.4rem;
+    border-bottom: 1px solid #00A747;
+    margin: auto;
+}
+.meet-our{
+    margin: auto;
+    color: #9A9A9A;
+    font-size: 14px;
+    font-weight: medium;
 }
 ._509724c2 {
     display: -webkit-box;
@@ -487,6 +496,7 @@ footer{
     display: flex;
     gap: 1.5rem;
 }
+
 
 
 
