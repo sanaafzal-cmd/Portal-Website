@@ -1,6 +1,6 @@
 function toggleDivs() {
-  var div1 = document.getElementById("div1");
-  var div2 = document.getElementById("div2");
+  var div1 = document.getElementById("buy-toggle");
+  var div2 = document.getElementById("rent-toggle");
   if (div1.style.display === "none") {
     div1.style.display = "block";
     div2.style.display = "none";
@@ -9,3 +9,6 @@ function toggleDivs() {
     div2.style.display = "block";
   }
 }
+
+document.getElementById("to-buy").addEventListener("click", toggleDivs);
+document.getElementById("to-rent").addEventListener("click", toggleDivs);
