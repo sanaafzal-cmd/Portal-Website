@@ -12,3 +12,25 @@ function toggleDivs() {
 
 document.getElementById("to-buy").addEventListener("click", toggleDivs);
 document.getElementById("to-rent").addEventListener("click", toggleDivs);
+
+var box1 = document.querySelector('#box-1');
+var box2 = document.querySelector('#box-2');
+
+box2.style.display = "none";
+
+if(box1) {
+    box1.addEventListener('mouseenter', colorin);
+    box1.addEventListener('mouseout', colorout);
+
+}
+
+function colorin() {
+    box1.style.display = "none";
+    box2.style.display="block";
+}
+
+function colorout() {
+  box2.style.display = "none";
+  box1.style.display="block";
+    
+}
