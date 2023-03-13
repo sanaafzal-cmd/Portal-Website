@@ -86,6 +86,16 @@ header nav ul li a{
     border: none;
     border-radius: 3px;
 }
+.is_active{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #00A747;
+    background-color: #FFFFFF;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+}
+
 .search-heading{
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
@@ -266,6 +276,10 @@ border: 1px solid #E0F5EE;
     height: 109px;
     background-color: #ffffff;
     border: 2px solid #00A747;
+    border-radius: 11px;
+    font-size: 30px;
+    font-weight: medium;
+    color: #00A747;
     
 }
 .owner-info{
