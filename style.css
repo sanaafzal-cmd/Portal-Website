@@ -608,6 +608,24 @@ footer{
         right: 20px;
         text-align: center;
     }
+    .flex-container {
+        display: flex;
+        margin: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        /* padding: 20px 25px 20px 25px; */
+        width: 44px;
+        height: 43px;
+        font-size: 21px;
+        color: #000000;
+        font-weight: medium;
+        filter: drop-shadow(0 0 6px #000000);
+      }
    
   
 
