@@ -601,6 +601,14 @@ footer{
         height: 25px;
         font-weight: medium;
     }
+    .no-of-clicks{
+        position: absolute;
+        top:10px;
+        color: #9A9A9A;
+        right: 20px;
+        text-align: center;
+    }
+   
   
 
 
