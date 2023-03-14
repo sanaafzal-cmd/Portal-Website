@@ -4,6 +4,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: #F5F5F5;
 } 
 /*
 header{
@@ -119,10 +120,21 @@ header nav ul li a{
     padding: 20px;
     margin: 5px;
 }
+.form-select{
+    width: 160px;
+    height: 59px;
+   font-size: 13px;
+   font-weight: medium;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 5px;
+    color: #9A9A9A;
+}
 
 .location{
     width: 510px;
-    height: 49px;
+    height: 59px;
     border-radius: 7px;
     background-color: #FFFFFF;
     padding: 20px;
@@ -130,7 +142,7 @@ header nav ul li a{
 }
 input[type="submit"]{
     width: 160px;
-    height: 49px;
+    height: 59px;
     background-color: #00A747;
     color: #ffffff;
     border: none;
