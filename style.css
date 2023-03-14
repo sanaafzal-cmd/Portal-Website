@@ -53,7 +53,7 @@ header nav ul li a{
 }
 .hero-section{
     background: url(img/hero-img.png);
-   height: 90vh;
+   height: 80vh;
    background-size: contain;
    object-fit: contain;
    background-attachment: scroll;
@@ -289,6 +289,12 @@ border: 1px solid #E0F5EE;
     display: flex;
     padding: 5px;
 }
+.owner-info-1{
+    display: flex;
+    padding: 5px;
+    margin-top: -80px;
+}
+
 
 /* Footer */
 @media (max-width: 1366px){
