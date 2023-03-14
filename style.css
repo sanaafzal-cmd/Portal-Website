@@ -46,10 +46,16 @@ header nav ul li a{
     background-color: #ffffff !important;
 }
 .nav-link{
-    color: #00A948;
+    color: #9A9A9A;
     font-size: 14px;
     font-weight: bold;
     padding: 15px 20px !important;
+}
+.active{
+    color: #00A948 !important;
+}
+.login{
+    color: #00A948 !important;
 }
 .hero-section{
     background: url(img/hero-img.png);
@@ -194,6 +200,8 @@ input[type="submit"]{
    /* width: 24.625rem;*/
    width: 22rem;
     height: 481px;
+    border: none !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
 }
 .card-sub-heading{
     display: flex;
@@ -313,7 +321,7 @@ border: 1px solid #E0F5EE;
 .d29e163a {
     max-width: 1200px;
     height: 20.4rem;
-    background: url(/img/mobileAppsBackground.937eb86be98b3bde537276043aa8e3da.png) no-repeat;
+    background: url(img/mobileAppsBackground.937eb86be98b3bde537276043aa8e3da.png) no-repeat;
     background-size: contain;
     background-position-y: bottom;
     background-position-x: center;
@@ -359,11 +367,11 @@ border: 1px solid #E0F5EE;
     display: inline-block;
 }
 ._99d01467 {
-    background: url(/img/app-store.png) 50%/contain no-repeat;
+    background: url(img/app-store.png) 50%/contain no-repeat;
     margin-right: 1rem;
 }
 ._40bad90a {
-    background: url(/img/Google_Play-Badge-Logo.wine.png) 50%/contain no-repeat;
+    background: url(img/Google_Play-Badge-Logo.wine.png) 50%/contain no-repeat;
 }
 ._40bad90a, ._99d01467 {
     width: 13.2rem;
@@ -374,11 +382,15 @@ border: 1px solid #E0F5EE;
     display: inline-block;
     vertical-align: top;
 }
+.e8e082f9 {
+    text-align: right;
+    vertical-align: top;
+}
 .e81f2a64 {
     margin-left: auto;
     margin-right: 2rem;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 500;
     
     line-height: normal;
 }
@@ -388,13 +400,13 @@ border: 1px solid #E0F5EE;
     margin-top: 0.3rem;
     margin-left: auto;
     margin-right: 1.7rem;
-    background-image: url(/assets/qrCodeArrow_noinline.bdbb701….svg);
+    
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
 }
 .d2e9372e {
-    background-image: url(/img/qr-code.png);
+    background-image: url(img/qr-code.png);
     background-size: contain;
     width: 8.4rem;
     height: 8.4rem;
