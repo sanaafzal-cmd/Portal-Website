@@ -638,7 +638,14 @@ footer{
         font-weight: medium;
         filter: drop-shadow(0 0 6px #000000);
       }
-   
+   .location-input{
+    position: relative;
+   }
+   .location-input img{
+    position: absolute;
+    right: 0px;
+    padding: 22px 22px;
+   }
   
 
 
