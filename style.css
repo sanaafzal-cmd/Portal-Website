@@ -59,14 +59,17 @@ header nav ul li a{
     color: #00A948 !important;
 }
 .hero-section{
-    background: url(img/hero-img.png);
+    background: url(img/hero-img.png) ;
+   
    height: 80vh;
    background-size: contain;
    object-fit: contain;
    background-attachment: scroll;
    background-repeat: no-repeat;
+ 
    
 }
+
 .search-area{
    /* width: 713px;
     height: 244px;*/
@@ -75,6 +78,14 @@ header nav ul li a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+}
+.search-buttons{
+    background-color: #707070;
+    position: relative;
+    width: 265px;
+    height: 51px;
+   
 }
 .to-buy{
     font-family: 'Poppins', sans-serif;
@@ -84,6 +95,7 @@ header nav ul li a{
     padding: 10px 30px;
     border: none;
     border-radius: 3px;
+   
 }
 .to-rent{
     font-family: 'Poppins', sans-serif;
@@ -93,6 +105,7 @@ header nav ul li a{
     padding: 10px 30px;
     border: none;
     border-radius: 3px;
+   
 }
 .is_active{
     font-family: 'Poppins', sans-serif;
@@ -144,11 +157,21 @@ input[type="submit"]{
     width: 160px;
     height: 59px;
     background-color: #00A747;
-    color: #ffffff;
-    border: none;
+    color:#ffffff;
+    border: 1px solid #00A747;
     margin: 5px;
     border-radius: 10px;
+    font-size: 14px;
+    font-weight: medium;
 
+} 
+.btn-outline-success{
+    border: 1px solid #00A747;
+    border-radius: 10px;
+    color:#00A747;
+    font-size: 14px;
+    font-weight: medium;
+    
 }
 .form-controls{
     background-color: #3D454E;
@@ -161,6 +184,13 @@ input[type="submit"]{
     padding-right: 10px;
     
      
+}
+
+.reset-search{
+    background-color: #3D454E;
+    padding-right: 1.4rem;
+    padding-bottom: 1rem;
+
 }
 .featured-rentals, .latest-rentals{
     display: flex;
@@ -600,17 +630,30 @@ footer{
        /* padding-top: 20px;*/
         display: inline-block;
     }
-    .notify-badge{
+   /* .notify-badge{
         position: absolute;
         top: -10px;
         background: red;
         text-align: center;
-        /* border-radius: 30px 30px 30px 30px; */
+        
         color: #ffffff;
         padding: 5px 10px;
         font-size: 11px;
         width: 96.16px;
         height: 25px;
+        font-weight: medium;
+    }*/
+    .notify-badge-1{
+        position: absolute;
+        top: -10px;
+     left: -10px;
+        text-align: center;
+        /* border-radius: 30px 30px 30px 30px; */
+        color: #ffffff;
+        padding: 5px 10px;
+        font-size: 11px;
+        width: 110px;
+        height: 30px;
         font-weight: medium;
     }
     .no-of-clicks{
@@ -636,7 +679,7 @@ footer{
         font-size: 21px;
         color: #000000;
         font-weight: medium;
-        filter: drop-shadow(0 0 6px #000000);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       }
    .location-input{
     position: relative;
