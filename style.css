@@ -81,18 +81,21 @@ header nav ul li a{
     
 }
 .search-buttons{
-    background-color: #707070;
-    position: relative;
-    width: 265px;
-    height: 51px;
+    background-color: #3D454E;
+    display: flex;
+    flex-direction: row;
+   padding: 10px;
+    
    
 }
 .to-buy{
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
     color: #FFFFFF;
-    background-color: #707070;
-    padding: 10px 30px;
+   width: 157px;
+   height: 40px;
+    background-color: #3D454E;
+    
     border: none;
     border-radius: 3px;
    
@@ -112,9 +115,11 @@ header nav ul li a{
     font-size: 19px;
     color: #00A747;
     background-color: #FFFFFF;
-    padding: 10px 30px;
+    
     border: none;
     border-radius: 3px;
+    width: 157px;
+    height: 40px;
 }
 
 .search-heading{
@@ -154,7 +159,7 @@ header nav ul li a{
     margin: 5px;
 }
 input[type="submit"]{
-    width: 160px;
+    width: 170px;
     height: 59px;
     background-color: #00A747;
     color:#ffffff;
@@ -173,15 +178,22 @@ input[type="submit"]{
     font-weight: medium;
     
 }
-.form-controls{
+.inputs-area{
     background-color: #3D454E;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+
+.form-controls{
+   /* background-color: #3D454E;*/
     width: 100%;
     height: max-content;
     display: flex;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px;
     padding-top: 10px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px; */
     
      
 }
@@ -191,6 +203,12 @@ input[type="submit"]{
     padding-right: 1.4rem;
     padding-bottom: 1rem;
 
+}
+.featured-cards{
+    width: 20rem;
+    height: 435px;
+    border: none !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
 }
 .featured-rentals, .latest-rentals{
     display: flex;
@@ -241,7 +259,7 @@ input[type="submit"]{
 .rental-cards{
    /* width: 24.625rem;*/
    width: 22rem;
-    height: 481px;
+    height: 495px;
     border: none !important;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
 }
@@ -249,6 +267,9 @@ input[type="submit"]{
     display: flex;
     gap: 20px;
     
+}
+.card-text{
+    color: #00A747;
 }
 .card-categories{
     display: flex;
@@ -291,7 +312,7 @@ input[type="submit"]{
     font-size: 21px;
     font-weight: medium;
 }
-.flex-container {
+/* .flex-container {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -306,7 +327,7 @@ input[type="submit"]{
     color: #ffffff;
    font-weight: medium;
     font-size: 21px;
-  }
+  } */
 .services-cat{
 border: 1px solid #E0F5EE;
 }
@@ -415,6 +436,7 @@ border: 1px solid #E0F5EE;
 ._99d01467 {
     background: url(img/app-store.png) 50%/contain no-repeat;
     margin-right: 1rem;
+    
 }
 ._40bad90a {
     background: url(img/Google_Play-Badge-Logo.wine.png) 50%/contain no-repeat;
