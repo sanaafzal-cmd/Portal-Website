@@ -535,6 +535,7 @@ border: 1px solid #E0F5EE;
     align-items: stretch;
     background-color: #FFFFFF;
     margin-top: 2.4rem;
+    width: 100% !important;
     
 }
 /* ._509724c2 :not(:last-child) {
@@ -781,6 +782,9 @@ footer{
     justify-content: center;
     margin: 10px;
 
+}
+.footer-icons-spacing{
+    padding-right: 8px;
 }
 
   
