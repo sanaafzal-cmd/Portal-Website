@@ -767,6 +767,18 @@ footer{
     clear: both;
 }
 
+.list-button{
+    height: 44px;
+    width: 49px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
   
 
 
