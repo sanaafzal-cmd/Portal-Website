@@ -363,7 +363,7 @@ border: 1px solid #E0F5EE;
 .d29e163a {
     max-width: 1200px;
     height: 20.4rem;
-    background: url(img/mobileAppsBackground.937eb86be98b3bde537276043aa8e3da.png) no-repeat;
+    background: url(img/Mask\ Group\ 15.png) no-repeat;
     background-size: contain;
     background-position-y: bottom;
     background-position-x: center;
@@ -690,8 +690,84 @@ footer{
     padding: 22px 22px;
    }
   
+   /* List View */
+   .list-view-hero{
+    background: url(img/list-view-hero.png);
+    height: 90vh;
+    background-size: contain;
+    object-fit: contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  
+   }
+   .search-form-list{
+    margin-top: 150px;
+   }
 
+   /* Grid & List View Switcher */
 
+   .view-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.thumbnail
+{
+    margin-bottom: 30px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    border: 0;
+}
+.item.list-group-item .img-event {
+    float: left;
+    width: 30%;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.item.list-group-item .caption
+{
+    float: left;
+    width: 70%;
+    margin: 0;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item:after
+{
+    clear: both;
+}
+
+  
 
 
 
