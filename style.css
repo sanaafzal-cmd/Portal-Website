@@ -805,6 +805,23 @@ footer{
     margin: 10px;
 
 }
+.filter-by-date{
+    width:219px;
+    height: 44px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px;
+    border: none;
+    font-size: 17px;
+    color: #9A9A9A;
+    font-weight: lighter;
+}
+
+.selected-date{
+    font-size: 17px;
+    color: #9A9A9A;
+    font-weight: lighter;
+}
+
 .footer-icons-spacing{
     padding-right: 8px;
 }
