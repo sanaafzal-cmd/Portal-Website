@@ -826,6 +826,84 @@ footer{
     padding-right: 8px;
 }
 
+/* Grid Image Gallery */
+.grid-gallery{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    gap:10px;
+  }
+  
+  .grid-gallery .grid-item{
+    position: relative;
+    background-color: #efefef;
+     overflow: hidden; 
+  }
+  
+  .grid-gallery .grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+  
+  
+  .grid-gallery .grid-item:nth-child( 3n-2){
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .image-city{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: medium;
+   position: absolute;
+   top: 20px;
+   left: 25px;
+  }
+  .image-city-small{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: medium;
+   position: absolute;
+   top: 20px;
+   left: 15px;
+  }
+  .image-properties{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: medium;
+    position: absolute;
+    left: 460px;
+    top: 20px;
+  }
+  .image-properties-small{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: medium;
+    position: absolute;
+    left: 180px;
+    top: 20px;
+  }
+
+  /* Lets  make gallery responsive*/
+  @media (max-width:768px){
+    .grid-gallery{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+        grid-auto-rows: 250px;
+
+    }
+    .grid-gallery .grid-item:nth-child( 3n-2){
+        grid-column: unset;
+        grid-row: unset;
+      }
+    
+  }
+
   
 
 
