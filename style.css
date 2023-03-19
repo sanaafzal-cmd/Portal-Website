@@ -759,12 +759,13 @@ footer{
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 1rem;
-    border: 0;
+    /* padding: 0 1rem; */
+    border: none;
 }
 .item.list-group-item .img-event {
     float: left;
     width: 30%;
+    height:253px;
 }
 
 .item.list-group-item .list-group-image
@@ -779,9 +780,17 @@ footer{
 .item.list-group-item .caption
 {
     float: left;
-    width: 70%;
+    width: 60%;
     margin: 0;
 }
+.item.list-group-item .caption2{
+    
+    float: right;
+    width: 30%;
+    /* margin: 0; */
+    border-left: 1px solid black;
+}
+
 
 .item.list-group-item:before, .item.list-group-item:after
 {
@@ -803,6 +812,10 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 10px;
+
+}
+.list-button:hover{
+    color: #00A747;
 
 }
 .filter-by-date{
