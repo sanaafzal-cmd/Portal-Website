@@ -1,357 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <title>Property Baba</title>
-</head>
-<body>
-    <!--Header Start-->
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/propertybaba logo.png" alt="Bootstrap" width="82" height="49.16">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="listView.html">Properties</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Property</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Service 1</a></li>
-                  <li><a class="dropdown-item" href="#">Service 2</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Service 3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-                <li class="nav-item" style="list-style-type: none;">
-                    <a class="nav-link login" href="#">Login</a>
-                  </li>
-                  <li class="nav-item" style="list-style-type: none;">
-                    <a class="nav-link login" href="#" style="border: 1px solid #00A747;border-radius: 20px; padding: 10px;">Become a Seller</a>
-                  </li>
-                  
-                  
-               <!-- <button class="" type="submit">Become a Seller</button>  -->
-            </form>
-          </div>
-        </div>
-      </nav>
-    <!--Header End-->
 
-    <!--Hero Section Start-->
-    <section id="hero" class="hero-section">
-      
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Property Baba</title>
+</head>
+
+<body>
+  <!--Header Start-->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/propertybaba logo.png" alt="Bootstrap" width="82" height="49.16">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listView.html">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gridViewListing.html">Property</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Service 1</a></li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <li class="nav-item" style="list-style-type: none;">
+            <a id="loginBtn" style="cursor: pointer;" class="nav-link login" >Login</a>
+          </li>
+          <li class="nav-item" style="list-style-type: none;">
+            <a class="nav-link login login-btn" href="#"
+              style="border: 1px solid #00A747;border-radius: 10px; padding-right: 10px!important;
+              padding-left: 10px!important;
+          ">Become a Seller</a>
+          </li>
+
+
+          <!-- <button class="" type="submit">Become a Seller</button>  -->
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Header End-->
+
+
+
+
+  <!-- Login Modal start -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <div class="login-m1">
+      <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
+      <h2 class="lgm-h2">WELCOME TO PROPERTY BABA</h2>
+      <P class="lgm-pt">The trusted community of<br> buyers and sellers</P>
+      <button class="lgm-btn"><span><img src="" /></span>Continue with Email</button>
+      <button class="lgm-btn"><span><img src="" /></span>Continue with Facebook</button>
+      <button class="lgm-btn"><span><img src="" /></span>Continue with Google</button>
+      <p class="lgm-pb">By Continuing, you are accepting <span><b>Property Baba</b><a href="#">Terms of use</a></span> and <span><a href="#">Privacy Policy</a></span></p>
+    </div>
+
+  </div>
+
+</div>
+  <!-- Login Modal End -->
+
+
+
+  <!--Hero Section Start-->
+  <section id="hero" class="hero-section">
+
     <div class="container-fluid d-flex align-items-center justify-content-center">
-       <div class="row">
+      <div class="row">
         <div class="col mt-5">
-            <div class="search-area">
-                <h1 class="search-heading">Search property to Rent or Buy at <span>Property Baba</span></h1>
-                <div class="search-buttons">
-                    <button class="to-buy" id="to-buy">To Buy</button>
-                    <button class="is_active" id="to-rent">To Rent</button>
+          <div class="search-area">
+            <h1 class="search-heading">Search property to Rent or Buy at <span>Property Baba</span></h1>
+            <div class="search-buttons">
+              <button class="to-buy is_active" id="to-buy">To Buy</button>
+              <button class="to-buy" id="to-rent">To Rent</button>
+            </div>
+            <div style="margin: 15px; border-radius: 5px;" id="buy-toggle" class="inputs-area">
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Property type"> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Property Type</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="location-input">
+                  <input type="text" class="location" placeholder="">
+                  <img src="img/location-icon.png">
                 </div>
-                <div style="margin: 15px; border-radius: 5px;" id="buy-toggle" class="inputs-area">
-                    <div class="form-controls">
-                        <!-- <input type="text" class="property-type" placeholder="Property type"> -->
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Property Type</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <div class="location-input">
-                          <input type="text" class="location" placeholder="">
-                          <img src="img/location-icon.png">
-                        </div>
-                           
-                    </div>
-                    <div class="form-controls">
-                        <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
+
+              </div>
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
                         <input type="text" class="property-type" placeholder="Area">
                         <input type="text" class="property-type" placeholder="Price (Euro)"> -->
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Beds & Bathrooms</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Area</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Price (Euro)</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <input type="submit" class="" placeholder="Search">
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <a style="color: #ffffff; font-size: 13px; padding-right: 0.5rem; padding-top: 10px;">Reset Search</a>
-                        </div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Beds & Bathrooms</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Area</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Price (Euro)</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input type="submit" class="" placeholder="Search" value="SEARCH">
+              </div>
+              <div class="d-flex justify-content-end">
+                <a style="color: #ffffff; font-size: 13px; padding-right: 0.5rem; padding-top: 10px;">Reset Search</a>
+              </div>
+            </div>
+            <!--Div to Toggle-->
+            <div style="margin: 15px; border-radius: 5px; display: none;" id="rent-toggle" class="inputs-area">
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Property type"> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Property Type</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="location-input">
+                  <input type="text" class="location" placeholder="">
+                  <img src="img/location-icon.png">
                 </div>
-               <!--Div to Toggle-->
-               <div style="margin: 15px; border-radius: 5px; display: none;" id="rent-toggle" class="inputs-area">
-                <div class="form-controls">
-                    <!-- <input type="text" class="property-type" placeholder="Property type"> -->
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Property Type</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <div class="location-input">
-                      <input type="text" class="location" placeholder="">
-                      <img src="img/location-icon.png">
-                    </div>
-                       
-                </div>
-                <div class="form-controls">
-                    <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
+
+              </div>
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
                     <input type="text" class="property-type" placeholder="Area">
                     <input type="text" class="property-type" placeholder="Price (Euro)"> -->
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Beds & Bathrooms</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Area</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Price (Euro)</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <input type="submit" class="" placeholder="Search">
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a style="color: #ffffff; font-size: 13px; padding-right: 0.5rem; padding-top: 10px;">Reset Search 2</a>
-                    </div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Beds & Bathrooms</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Area</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Price (Euro)</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input type="submit" class="" placeholder="Search">
+              </div>
+              <div class="d-flex justify-content-end">
+                <a style="color: #ffffff; font-size: 13px; padding-right: 0.5rem; padding-top: 10px;">Reset Search 2</a>
+              </div>
             </div>
-               
-                
 
-            </div>
+
+
+          </div>
 
         </div>
-       </div>
+      </div>
     </div>
-    </section>
-    <!--Hero Section End-->
+  </section>
+  <!--Hero Section End-->
 
-<!--Featured Rental Cards Section-->
+  <!--Featured Rental Cards Section-->
 
-    <section class="featured-rentals m-3">
-      <div class="d-flex justify-content-center align-items-center flex-column m-3">
-        <h4 class="p-2">Explore Out</h4>
-        <h1 class="">Featured Rentals</h1>
-        <h4 class="p-2">Carefully chosen to deliver you quality experience</h4>
-      </div>
-       
+  <section class="featured-rentals m-3">
+    <div class="d-flex justify-content-center align-items-center flex-column m-3">
+      <h4 class="p-2">Explore Out</h4>
+      <h1 class="">Featured Rentals</h1>
+      <h4 class="p-2">Carefully chosen to deliver you quality experience</h4>
+    </div>
 
-        <div class="container">
-          <div class="row">
-              <div class="col">
-                  <div class="card featured-cards">
-                    <div class="featured-badge">
-                      <a href="#" style="text-decoration: none;">
-                        <div class="no-of-clicks">
-                          <span style="font-size: 15px;" >4</span>
-                          <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                        </div>
-                        
-                        <!-- <span class="notify-badge">Featured</span> -->
-                        <img src="img/featured-badge.png" class="notify-badge-1">
-                        
-                        <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                        
-                        <div class="owner-info-1">
-                          <img src="img/Mask Group 5.png">
-                          <div class="d-flex flex-column p-2">
-                              <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                              <div style="color:#ffffff; font-size: 15px;">Chris Jordan</div>
-                          </div>
-                        </div>
 
-                      </a>
-                    </div>
-                      <div class="card-body">
-                          <div class="card-heading">A Grand Modern Apartment</div>
-                          <div class="card-sub-heading">
-                          <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                        <p class="card-text">Birmingham, United Kingdom</p>
-                          </div>
-                          <div class="card-categories">
-                              <p>Bedrooms</p>
-                              <p>Bathrooms</p>
-                              <p>Area</p>
-                          </div>
-                          <div class="card-services">
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                                  <p class="card-text" style="color: #00B674;">3</p>
-                              </div>
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                                  <p class="card-text" style="color: #00B674;">2</p>
-                              </div>
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                                  <p class="card-text" style="color: #00B674;">2360 sq ft</p>
-                              </div>
-                          </div>
-      
-                          <div class="card-price pt-3">€ 3,50,000</div>
-                          
-                      </div>
-                    </div>
+    <div class="container ft-container">
+      <div class="row">
+        <div class="col">
+          <div class="card featured-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+
+                <!-- <span class="notify-badge">Featured</span> -->
+                <img src="img/featured-badge.png" class="notify-badge-1">
+
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+
+                <div class="owner-info-1">
+                  <img src="img/Mask Group 5.png">
+                  <div class="d-flex flex-column p-2">
+                    <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                    <div style="color:#ffffff; font-size: 15px;">Chris Jordan</div>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
               </div>
-              <div class="col">
-                  <div class="card featured-cards">
-                    <div class="featured-badge">
-                      <a href="#" style="text-decoration: none;">
-                        <div class="no-of-clicks">
-                          <span style="font-size: 15px;" >4</span>
-                          <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                        </div>
-                        <!-- <span class="notify-badge">Featured</span> -->
-                        <img src="img/featured-badge.png" class="notify-badge-1">
-                        <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                        <div class="owner-info-1">
-                          <img src="img/Mask Group 5.png">
-                          <div class="d-flex flex-column p-2">
-                              <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                              <div style="color:#ffffff; font-size: 15px;">Chris Jordan</div>
-                          </div>
-                        </div>
-
-                      </a>
-                    </div>
-                      
-                      <div class="card-body">
-                          <div class="card-heading">A Grand Modern Apartment</div>
-                          <div class="card-sub-heading">
-                          <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                        <p class="card-text">Birmingham, United Kingdom</p>
-                          </div>
-                          <div class="card-categories">
-                              <p>Bedrooms</p>
-                              <p>Bathrooms</p>
-                              <p>Area</p>
-                          </div>
-                          <div class="card-services">
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                                  <p class="card-text" style="color: #00B674;">3</p>
-                              </div>
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                                  <p class="card-text" style="color: #00B674;">2</p>
-                              </div>
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                                  <p class="card-text" style="color: #00B674;">2360 sq ft</p>
-                              </div>
-                          </div>
-      
-                          <div class="card-price pt-3">€ 3,50,000</div>
-                          
-                      </div>
-                    </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
               </div>
-              <div class="col">
-                  <div class="card featured-cards">
-                    <div class="featured-badge">
-                      <a href="#" style="text-decoration: none;">
-                        <div class="no-of-clicks">
-                          <span style="font-size: 15px;" >4</span>
-                          <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                        </div>
-                        <!-- <span class="notify-badge">Featured</span> -->
-                        <img src="img/featured-badge.png" class="notify-badge-1">
-                        <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                        <div class="owner-info-1">
-                          <img src="img/Mask Group 5.png">
-                          <div class="d-flex flex-column p-2">
-                              <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                              <div style="color:#ffffff; font-size: 15px;">Chris Jordan</div>
-                          </div>
-                        </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text" style="color: #00B674;">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text" style="color: #00B674;">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text" style="color: #00B674;">2360 sq ft</p>
+                </div>
+              </div>
 
-                      </a>
-                    </div>
-                    
-                      <div class="card-body">
-                          <div class="card-heading">A Grand Modern Apartment</div>
-                          <div class="card-sub-heading">
-                          <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                        <p class="card-text">Birmingham, United Kingdom</p>
-                          </div>
-                          <div class="card-categories">
-                              <p>Bedrooms</p>
-                              <p>Bathrooms</p>
-                              <p>Area</p>
-                          </div>
-                          <div class="card-services">
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                                  <p class="card-text" style="color: #00B674;">3</p>
-                              </div>
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                                  <p class="card-text" style="color: #00B674;">2</p>
-                              </div>
-                              <div class="card-sub-heading">
-                                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                                  <p class="card-text" style="color: #00B674;">2360 sq ft</p>
-                              </div>
-                          </div>
-      
-                          <div class="card-price pt-3">€ 3,50,000</div>
-                          
-                      </div>
-                    </div>
+              <div class="card-price pt-3">€ 3,50,000</div>
+
+            </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card featured-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+                <!-- <span class="notify-badge">Featured</span> -->
+                <img src="img/featured-badge.png" class="notify-badge-1">
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+                <div class="owner-info-1">
+                  <img src="img/Mask Group 5.png">
+                  <div class="d-flex flex-column p-2">
+                    <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                    <div style="color:#ffffff; font-size: 15px;">Chris Jordan</div>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
+              </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
+              </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text" style="color: #00B674;">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text" style="color: #00B674;">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text" style="color: #00B674;">2360 sq ft</p>
+                </div>
+              </div>
+
+              <div class="card-price pt-3">€ 3,50,000</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card featured-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+                <!-- <span class="notify-badge">Featured</span> -->
+                <img src="img/featured-badge.png" class="notify-badge-1">
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+                <div class="owner-info-1">
+                  <img src="img/Mask Group 5.png">
+                  <div class="d-flex flex-column p-2">
+                    <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                    <div style="color:#ffffff; font-size: 15px;">Chris Jordan</div>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
+              </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
+              </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text" style="color: #00B674;">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text" style="color: #00B674;">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text" style="color: #00B674;">2360 sq ft</p>
+                </div>
+              </div>
+
+              <div class="card-price pt-3">€ 3,50,000</div>
+
+            </div>
+          </div>
+        </div>
       </div>
 
-       <!--Pagination Start-->
-       <!-- <nav aria-label="..." class="d-flex align-items-center justify-content-center m-3">
+      <!--Pagination Start-->
+      <!-- <nav aria-label="..." class="d-flex align-items-center justify-content-center m-3">
         <ul class="pagination pagination-lg">
           <li class="page-item active m-2" aria-current="page">
             <span class="page-link">1</span>
@@ -361,669 +399,687 @@
         </ul>
       </nav> -->
 
-       <!--Pagination Ends-->
-       <div class="flex-container">
+      <!--Pagination Ends-->
+      <div class="flex-container">
         <div class="d-flex justify-content-center align-items-center" style="background-color:#00A747;">1</div>
         <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">2</div>
-         
+
       </div>
-    </section>
+  </section>
 
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-3 g-0 d-flex justify-content-center align-items-center" style="background-color: #E0F5EE; font-size: 60px; font-weight: bold; color: #00A747;">
-                    Services
-                </div>
-                <div class="col-9 g-0">
-                    <div class="container p-5" style="background-color: #00A747;">
-                        <div class="row">
-                          <!--Market Place Service-->
-                          <div class="col services-cat bg-light p-3 service-container">
-                            <div class="text-center "> 
-                              <img src="img/marketplace.png" class="services-icons" alt="...">
-                              <div class="service-heading p-2">Market Place </div> 
-                            </div>
-                            <div class="overlay"></div>
-                             <div class="service-btn"><a href="#"> Visit </a></div>
-                          </div>
-                          
-                        
-                       <!--Relocation Service-->
-                       <div class="col services-cat bg-light p-3 service-container">
-                        <div class="text-center "> 
-                          <img src="img/relocation-services.png" class="services-icons" alt="...">
-                          <div class="service-heading p-2">Relocation Services </div> 
-                        </div>
-                        <div class="overlay"></div>
-                         <div class="service-btn"><a href="#"> Visit </a></div>
-                      </div>
-                           
-                           <!--Insurance Service-->
-                      <div class="col services-cat bg-light p-3 service-container">
-                        <div class="text-center "> 
-                          <img src="img/insurance.png" class="services-icons" alt="...">
-                          <div class="service-heading p-2">Insurance </div> 
-                        </div>
-                        <div class="overlay"></div>
-                         <div class="service-btn"><a href="#"> Visit </a></div>
-                      </div>
-                            
-                        </div>
-                        <div class="row">
-                          <!--Property Rental Report-->
-                          <div class="col services-cat bg-light p-3 service-container">
-                            <div class="text-center "> 
-                              <img src="img/rental report.png" class="services-icons" alt="...">
-                              <div class="service-heading p-2">Property Rental Report </div> 
-                            </div>
-                            <div class="overlay"></div>
-                             <div class="service-btn"><a href="#"> Visit </a></div>
-                          </div>
-                           
-                          <!--Community Service-->
-                          <div class="col services-cat bg-light p-3 service-container">
-                            <div class="text-center "> 
-                              <img src="img/community-service.png" class="services-icons" alt="...">
-                              <div class="service-heading p-2"> Community Service </div> 
-                            </div>
-                            <div class="overlay"></div>
-                             <div class="service-btn"><a href="#"> Visit </a></div>
-                          </div>
-                            
-                          <!--Rental Portal Service-->
-                          <div class="col services-cat bg-light p-3 service-container">
-                            <div class="text-center "> 
-                              <img src="img/rental-portal.png" class="services-icons" alt="...">
-                              <div class="service-heading p-2">Rental Portal Service </div> 
-                            </div>
-                            <div class="overlay"></div>
-                             <div class="service-btn"><a href="#"> Visit </a></div>
-                          </div>
-                           
-                        </div>
-                        <div class="row">
-                           <!--Luxury Property-->
-                           <div class="col services-cat bg-light p-3 service-container">
-                            <div class="text-center "> 
-                              <img src="img/Mini House.I01.2k.png" class="services-icons" alt="...">
-                              <div class="service-heading p-2">Luxury Property </div> 
-                            </div>
-                            <div class="overlay"></div>
-                             <div class="service-btn"><a href="#"> Visit </a></div>
-                          </div>
-                            
-                          <!--Real Estate Consultant-->
-                          <div class="col services-cat bg-light p-3 service-container">
-                            <div class="text-center "> 
-                              <img src="img/real-estate.png" class="services-icons" alt="...">
-                              <div class="service-heading p-2">Real Estate Consultant </div> 
-                            </div>
-                            <div class="overlay"></div>
-                             <div class="service-btn"><a href="#"> Visit </a></div>
-                          </div>
-
-                          <!--Real Estate Consultant-->
-                            
-                          <div class="col services-cat bg-light p-3 service-container">
-                            <div class="text-center "> 
-                              <img src="img/airbnb (1).png" class="services-icons" alt="...">
-                              <div class="service-heading p-2">Real Estate Consultant</div> 
-                            </div>
-                            <div class="overlay"></div>
-                             <div class="service-btn"><a href="#"> Visit </a></div>
-                          </div>
-                           
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 g-0 d-flex justify-content-center align-items-center"
+          style="background-color: #E0F5EE; font-size: 60px; font-weight: bold; color: #00A747;">
+          Services
         </div>
-    </section>
-
-    <section class="properties-by-cities m-5">
-       
-        <div class="container">
-            <div class="row m-3 text-center">
-                <div class="col-12 text-center p-3" style="font-size: 34px; font-weight: medium; color: #00A747;">
-                    Properties by Cities
-                </div>
-                <div>
-                  <img src="img/line.png" class="text-center">
-                </div>
-            </div>
-            </div>
-
-            <div class="grid-gallery">
-              <div class="grid-item">
-                <div style="position: absolute;">
-                  <div style="position: relative;">
-                    <div class="image-city">London</div>
-                    <div class="image-properties">200 Properties</div>
-                  </div>
-                 
-                </div>
-                <a href="#">
-                  <img src="img/Mask Group 8.png">
-                </a>
-              </div>
-              <div class="grid-item">
-                <div style="position: absolute;">
-                  <div style="position: relative;">
-                    <div class="image-city-small">Liverpool</div>
-                    <div class="image-properties-small">20 Properties</div>
-                  </div>
-                 
-                </div>
-                <a href="#">
-                  <img src="img/Mask Group 10.png">
-                </a>
-              </div>
-              <div class="grid-item">
-                <div style="position: absolute;">
-                  <div style="position: relative;">
-                    <div class="image-city-small">Manchester</div>
-                    <div class="image-properties-small">11 Properties</div>
-                  </div>
-                 
-                </div>
-                <a href="#">
-                  <img src="img/Mask Group 11.png">
-                </a>
-              </div>
-              <div class="grid-item">
-                <div style="position: absolute;">
-                  <div style="position: relative;">
-                    <div class="image-city">Birmingham</div>
-                    <div class="image-properties">192 Properties</div>
-                  </div>
-                 
-                </div>
-                <a href="#">
-                  <img src="img/Mask Group 9.png">
-                </a>
-              </div>
-              <div class="grid-item">
-                <div style="position: absolute;">
-                  <div style="position: relative;">
-                    <div class="image-city-small">New Castle</div>
-                    <div class="image-properties-small">56 Properties</div>
-                  </div>
-                 
-                </div>
-                <a href="#">
-                  <img src="img/Mask Group 13.png">
-                </a>
-              </div>
-              <div class="grid-item">
-                <div style="position: absolute;">
-                  <div style="position: relative;">
-                    <div class="image-city-small">Cambridge</div>
-                    <div class="image-properties-small">100 Properties</div>
-                  </div>
-                 
-                </div>
-                <a href="#">
-                  <img src="img/Mask Group 12.png">
-                </a>
-              </div>
-            </div>
-
-    </section>
-
-    <!--Latest Rentals Section-->
-    <section class="latest-rentals">
-      <div class="m-3 d-flex justify-content-center align-items-center flex-column">
-        <h4 class="p-2">Also Explore</h4>
-        <h1 class="">Latest Rentals</h1>
-        <h4 class="p-2">for a refreshing experience</h4>
-      </div>
-       
-
-        <div class="container">
+        <div class="col-9 g-0">
+          <div class="container p-5" style="background-color: #00A747;">
             <div class="row">
-              <div class="col">
-                <div class="card rental-cards">
-                  <div class="featured-badge">
-                    <a href="#" style="text-decoration: none;">
-                      <div class="no-of-clicks">
-                        <span style="font-size: 15px;" >4</span>
-                        <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                      </div>
-                      <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  
-                  <div class="card-body">
-                      <div class="card-heading">A Grand Modern Apartment</div>
-                      <div class="card-sub-heading">
-                      <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                    <p class="card-text">Birmingham, United Kingdom</p>
-                      </div>
-                      <div class="card-categories">
-                          <p>Bedrooms</p>
-                          <p>Bathrooms</p>
-                          <p>Area</p>
-                      </div>
-                      <div class="card-services">
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                              <p class="card-text">3</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                              <p class="card-text">2</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                              <p class="card-text">2360 sq ft</p>
-                          </div>
-                      </div>
-                
-                      <div class="card-price">€ 3,50,000</div>
-                      <div class="owner-info">
-                        <img src="img/Mask Group 5.png">
-                        <div class="d-flex flex-column p-2">
-                            <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                            <div style="color: #00A747;">Chris Jordan</div>
-                        </div>
-                      </div>
-                      
-                  </div>
-          
+              <!--Market Place Service-->
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/marketplace.png" class="services-icons" alt="...">
+                  <div class="service-heading p-2">Market Place </div>
                 </div>
-          
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
               </div>
-          
-              <div class="col">
-                <div class="card rental-cards">
-                  <div class="featured-badge">
-                    <a href="#" style="text-decoration: none;">
-                      <div class="no-of-clicks">
-                        <span style="font-size: 15px;" >4</span>
-                        <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                      </div>
-                      <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  
-                  
-                  <div class="card-body">
-                      <div class="card-heading">A Grand Modern Apartment</div>
-                      <div class="card-sub-heading">
-                      <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                    <p class="card-text">Birmingham, United Kingdom</p>
-                      </div>
-                      <div class="card-categories">
-                          <p>Bedrooms</p>
-                          <p>Bathrooms</p>
-                          <p>Area</p>
-                      </div>
-                      <div class="card-services">
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                              <p class="card-text">3</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                              <p class="card-text">2</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                              <p class="card-text">2360 sq ft</p>
-                          </div>
-                      </div>
-                
-                      <div class="card-price">€ 3,50,000</div>
-                      <div class="owner-info">
-                        <img src="img/Mask Group 5.png">
-                        <div class="d-flex flex-column p-2">
-                            <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                            <div style="color: #00A747;">Chris Jordan</div>
-                        </div>
-                      </div>
-                      
-                  </div>
-                </div>
-          
-              </div>
-          
-              <div class="col">
-          
-                <div class="card rental-cards">
-                  <div class="featured-badge">
-                    <a href="#" style="text-decoration: none;">
-                      <div class="no-of-clicks">
-                        <span style="font-size: 15px;" >4</span>
-                        <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                      </div>
-                      <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  
-                  <div class="card-body">
-                      <div class="card-heading">A Grand Modern Apartment</div>
-                      <div class="card-sub-heading">
-                      <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                    <p class="card-text">Birmingham, United Kingdom</p>
-                      </div>
-                      <div class="card-categories">
-                          <p>Bedrooms</p>
-                          <p>Bathrooms</p>
-                          <p>Area</p>
-                      </div>
-                      <div class="card-services">
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                              <p class="card-text">3</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                              <p class="card-text">2</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                              <p class="card-text">2360 sq ft</p>
-                          </div>
-                      </div>
-                
-                      <div class="card-price">€ 3,50,000</div>
-                      <div class="owner-info">
-                        <img src="img/Mask Group 5.png">
-                        <div class="d-flex flex-column p-2">
-                            <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                            <div style="color: #00A747;">Chris Jordan</div>
-                        </div>
-                      </div>
-                      
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="row mt-5">
-              <div class="col">
-                <div class="card rental-cards">
-                  <div class="featured-badge">
-                    <a href="#" style="text-decoration: none;">
-                      <div class="no-of-clicks">
-                        <span style="font-size: 15px;" >4</span>
-                        <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                      </div>
-                      <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  
-                  <div class="card-body">
-                      <div class="card-heading">A Grand Modern Apartment</div>
-                      <div class="card-sub-heading">
-                      <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                    <p class="card-text">Birmingham, United Kingdom</p>
-                      </div>
-                      <div class="card-categories">
-                          <p>Bedrooms</p>
-                          <p>Bathrooms</p>
-                          <p>Area</p>
-                      </div>
-                      <div class="card-services">
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                              <p class="card-text">3</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                              <p class="card-text">2</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                              <p class="card-text">2360 sq ft</p>
-                          </div>
-                      </div>
-                
-                      <div class="card-price">€ 3,50,000</div>
-                      <div class="owner-info">
-                        <img src="img/Mask Group 5.png">
-                        <div class="d-flex flex-column p-2">
-                            <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                            <div style="color: #00A747;">Chris Jordan</div>
-                        </div>
-                      </div>
-                      
-                  </div>
-                </div>
-              </div>
-          
-              <div class="col">
-                <div class="card rental-cards">
-                  <div class="featured-badge">
-                    <a href="#" style="text-decoration: none;">
-                      <div class="no-of-clicks">
-                        <span style="font-size: 15px;" >4</span>
-                        <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                      </div>
-                      <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                 
-                  <div class="card-body">
-                      <div class="card-heading">A Grand Modern Apartment</div>
-                      <div class="card-sub-heading">
-                      <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                    <p class="card-text">Birmingham, United Kingdom</p>
-                      </div>
-                      <div class="card-categories">
-                          <p>Bedrooms</p>
-                          <p>Bathrooms</p>
-                          <p>Area</p>
-                      </div>
-                      <div class="card-services">
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                              <p class="card-text">3</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                              <p class="card-text">2</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                              <p class="card-text">2360 sq ft</p>
-                          </div>
-                      </div>
-                
-                      <div class="card-price">€ 3,50,000</div>
-                      <div class="owner-info">
-                        <img src="img/Mask Group 5.png">
-                        <div class="d-flex flex-column p-2">
-                            <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                            <div style="color: #00A747;">Chris Jordan</div>
-                        </div>
-                      </div>
-                      
-                  </div>
-                </div>
-          
-              </div>
-          
-              <div class="col">
-                <div class="card rental-cards">
-                  <div class="featured-badge">
-                    <a href="#" style="text-decoration: none;">
-                      <div class="no-of-clicks">
-                        <span style="font-size: 15px;" >4</span>
-                        <img src="img/ic_camera_alt_24px.png" width="20" height="18">
-                      </div>
-                      <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  
-                  <div class="card-body">
-                      <div class="card-heading">A Grand Modern Apartment</div>
-                      <div class="card-sub-heading">
-                      <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
-                    <p class="card-text">Birmingham, United Kingdom</p>
-                      </div>
-                      <div class="card-categories">
-                          <p>Bedrooms</p>
-                          <p>Bathrooms</p>
-                          <p>Area</p>
-                      </div>
-                      <div class="card-services">
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
-                              <p class="card-text">3</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
-                              <p class="card-text">2</p>
-                          </div>
-                          <div class="card-sub-heading">
-                              <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
-                              <p class="card-text">2360 sq ft</p>
-                          </div>
-                      </div>
-                
-                      <div class="card-price">€ 3,50,000</div>
-                      <div class="owner-info">
-                        <img src="img/Mask Group 5.png">
-                        <div class="d-flex flex-column p-2">
-                            <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
-                            <div style="color: #00A747;">Chris Jordan</div>
-                        </div>
-                      </div>
-                      
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex-container">
-              <div class="d-flex justify-content-center align-items-center" style="background-color:#00A747;">1</div>
-              <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">2</div>
-              <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">3</div>
-              <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">4</div>
-              <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">5</div>
-              <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">6</div>
-               
-            </div>
-           </div>
-    </section>
 
-    <!--Footer-->
-    
-      <div class="_2f01ad7d">
-        <div class="_035521cc">
-          <div class="lazyload-wrapper ">
-            <div style="" class="d29e163a">
-              <div class="eecc1d16">
-                <div class="e779da4e">Get the Property Baba App</div>
-                <div class="_5005c3df">Rent and buy property faster and better on <br>our app. </div>
-              </div>
-              <div class="bfe1194d">
-                <div class="_0e2528e5">
-                  <a href="#"><div class="_99d01467">
-                    </div></a>
-                    <a href=""><div class="_40bad90a"></div></a></div>
-                    <div class="e8e082f9">
-                      <div class="eed449e1">
-                        <div class="e81f2a64">Scan the QR code <br>to download the app</div>
-                        <div class="_8e9ddfc2"></div>
-                      </div>
-                      <div class="d2e9372e"></div>
-                    </div>
-                  </div>
+
+              <!--Relocation Service-->
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/relocation-services.png" class="services-icons" alt="...">
+                  <div class="service-heading p-2">Relocation Services </div>
                 </div>
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
               </div>
+
+              <!--Insurance Service-->
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/insurance.png" class="services-icons" alt="...">
+                  <div class="service-heading p-2">Insurance </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
+              </div>
+
+            </div>
+            <div class="row">
+              <!--Property Rental Report-->
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/rental report.png" class="services-icons" alt="...">
+                  <div class="service-heading p-2">Property Rental Report </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
+              </div>
+
+              <!--Community Service-->
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/community-service.png" class="services-icons" alt="...">
+                  <div class="service-heading p-2"> Community Service </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
+              </div>
+
+              <!--Rental Portal Service-->
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/rental-portal.png" class="services-icons" alt="...">
+                  <div class="service-heading p-2">Rental Portal Service </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
+              </div>
+
+            </div>
+            <div class="row">
+              <!--Luxury Property-->
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/Mini House.I01.2k.png" class="services-icons" alt="...">
+                  <div class="service-heading p-2">Luxury Property </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
+              </div>
+
+              <!--Real Estate Consultant-->
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/real-estate.png" class="services-icons" alt="...">
+                  <div class="service-heading p-2">Real Estate Consultant </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
+              </div>
+
+              <!--Real Estate Consultant-->
+
+              <div class="col services-cat bg-light p-3 service-container">
+                <div class="text-center ">
+                  <img src="img/airbnb (1).png" class="services-icons" alt="...">
+                  <div class="service-heading p-2">Real Estate Consultant</div>
+                </div>
+                <div class="overlay"></div>
+                <div class="service-btn"><a href="#"> Visit </a></div>
+              </div>
+
             </div>
           </div>
 
-          <!--Our Partners-->
-          
-
-          <!--Our partners-->
-          <div class="_8b4880fe">
-            <div class="_035521cc">
-              <div class="_3cfee633">
-                <div class="bb8c9385">
-                  <div class="meet-our">Meet Our</div>
-                  <div class="_2cce6008">Partners</div>
-                  
-                  <div class="_509724c2">
-                    <span class="_85f0c96b">
-                      <img src="img/Mask Group 21.png" alt="HBL Bank" class="e2e28acc"></span>
-                      <span class="_85f0c96b">
-                        <img src="img/lineart_logo_letter_u_modern_color.png" alt="SCB Bank" class="e2e28acc"></span>
-                        <span class="_85f0c96b">
-                          <img src="img/preview.png" alt="JS Bank" class="e2e28acc"></span>
-                          <span class="_85f0c96b">
-                            <img src="img/Mask Group 19.png" alt="HBFC" class="e2e28acc"></span>
-                            <span class="_85f0c96b">
-                              <img src="img/Mask Group 20.png" alt="Habib Bank" class="e2e28acc"></span>
-                              
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-       <!--Dark Footer-->
-       <footer>
-      <div class="container">
-        <div class="row align-items-end">
-          <div class="col">
-            <div style="color: #00A747; font-size: 1.5rem; font-weight: bold;" class="text-center"><img src="img/propertybaba logo.png"></div>
-            <div class="p-3" style="font-size: 15px; font-weight: medium;">Get in Touch</div>
-            <div class="phone p-3" style="font-size: 12px;"><img src="img/phone.png" class="footer-icons-spacing">07393939800</div>
-            <div class="email p-3" style="font-size: 12px;"><img src="img/mail.png" class="footer-icons-spacing">info@propertybaba.com</div>
-            <div class="address p-3" style="font-size: 12px;"><img src="img/footer-location-icon.png" class="footer-icons-spacing">
-              97 Vincent Drive, Birmingham B15 2SQ</div>
-
-          </div>
-
-          <div class="col">
-            <div class="p-3" style="font-size: 15px; font-weight: medium;">Quick Links</div>
-            <div class="link-1 p-3" style="font-size: 12px;">
-              <a href="#" style="text-decoration: none; color: #ffffff;" >Home</a>
-               <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto">Services</a>
-            </div>
-            <div class="link-2 p-3" style="font-size: 12px;" >
-              <a href="#" style="text-decoration: none; color: #ffffff;">Property</a>
-               <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto" >Contact Us</a>
-            </div>
-            <div class="link-3 p-3" style="font-size: 12px;" >
-              <a href="#" style="text-decoration: none; color: #ffffff;"><p>Properties</p></a>
-               <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto"><p>About Us</p></a>
-            </div>
-               
-          </div>
-          <div class="col">
-            <div class="p-2" style="font-size: 15pxrem; font-weight: medium;">Socials</div>
-            <div class="social-icons">
-             <a href="#"><img src="img/twitter.png"></a> 
-             <a href="#"><img src="img/facebook.png"></a> 
-              <a href="#"><img src="img/youtube.png"></a>
-              <a href="#"><img src="img/instagram (1).png"></a>
-            </div>
-            <div class="google-icons pt-5">
-              <img src="img/Google_Play-Badge-Logo.wine.png" width="143" height="42">
-              <img src="img/app-store.png" width="143" height="42" >
-            </div>
-          </div>
         </div>
-
       </div>
-
-      
-    </footer>
-    <div class="d-flex justify-content-center align-items-center" style="height: 52px; width: 100%; background-color: #00A747; z-index: 1000; color: #ffffff; font-size: 13px; font-weight: medium;">
-      © Copyright 2022 Property Baba. All Rights Reserved 
     </div>
-    <!--Footer End-->
+  </section>
+
+  <section class="properties-by-cities m-5">
+       
+    <div class="container">
+        <div class="row m-3 text-center">
+            <div class="col-12 text-center p-3" style="font-size: 34px; font-weight: medium; color: #00A747;">
+                Properties by Cities
+            </div>
+            <div>
+              <img src="img/line.png" class="text-center">
+            </div>
+        </div>
+        </div>
+
+        <div class="grid-gallery">
+          <div class="grid-item">
+            <div style="position: absolute;">
+              <div style="position: relative;">
+                <div class="image-city">London</div>
+                <div class="image-properties">200 Properties</div>
+              </div>
+             
+            </div>
+            <a href="#">
+              <img src="img/Mask Group 8.png">
+            </a>
+          </div>
+          <div class="grid-item">
+            <div style="position: absolute;">
+              <div style="position: relative;">
+                <div class="image-city-small">Liverpool</div>
+                <div class="image-properties-small">20 Properties</div>
+              </div>
+             
+            </div>
+            <a href="#">
+              <img src="img/Mask Group 10.png">
+            </a>
+          </div>
+          <div class="grid-item">
+            <div style="position: absolute;">
+              <div style="position: relative;">
+                <div class="image-city-small">Manchester</div>
+                <div class="image-properties-small">11 Properties</div>
+              </div>
+             
+            </div>
+            <a href="#">
+              <img src="img/Mask Group 11.png">
+            </a>
+          </div>
+          <div class="grid-item">
+            <div style="position: absolute;">
+              <div style="position: relative;">
+                <div class="image-city">Birmingham</div>
+                <div class="image-properties">192 Properties</div>
+              </div>
+             
+            </div>
+            <a href="#">
+              <img src="img/Mask Group 9.png">
+            </a>
+          </div>
+          <div class="grid-item">
+            <div style="position: absolute;">
+              <div style="position: relative;">
+                <div class="image-city-small">New Castle</div>
+                <div class="image-properties-small">56 Properties</div>
+              </div>
+             
+            </div>
+            <a href="#">
+              <img src="img/Mask Group 13.png">
+            </a>
+          </div>
+          <div class="grid-item">
+            <div style="position: absolute;">
+              <div style="position: relative;">
+                <div class="image-city-small">Cambridge</div>
+                <div class="image-properties-small">100 Properties</div>
+              </div>
+             
+            </div>
+            <a href="#">
+              <img src="img/Mask Group 12.png">
+            </a>
+          </div>
+        </div>
+
+</section>
+  <section class="latest-rentals">
+    <div class="m-3 d-flex justify-content-center align-items-center flex-column">
+      <h4 class="p-2">Also Explore</h4>
+      <h1 class="">Latest Rentals</h1>
+      <h4 class="p-2">for a refreshing experience</h4>
+    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-   
-<script src="main.js"></script>
+    <div class="container lt-container">
+      <div class="row">
+        <div class="col">
+          <div class="card rental-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
+              </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
+              </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text">2360 sq ft</p>
+                </div>
+              </div>
+
+              <div class="card-price">€ 3,50,000</div>
+              <div class="owner-info">
+                <img src="img/Mask Group 5.png">
+                <div class="d-flex flex-column p-2">
+                  <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                  <div style="color: #00A747;">Chris Jordan</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col">
+          <div class="card rental-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+              </a>
+            </div>
+
+
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
+              </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
+              </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text">2360 sq ft</p>
+                </div>
+              </div>
+
+              <div class="card-price">€ 3,50,000</div>
+              <div class="owner-info">
+                <img src="img/Mask Group 5.png">
+                <div class="d-flex flex-column p-2">
+                  <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                  <div style="color: #00A747;">Chris Jordan</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col">
+
+          <div class="card rental-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
+              </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
+              </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text">2360 sq ft</p>
+                </div>
+              </div>
+
+              <div class="card-price">€ 3,50,000</div>
+              <div class="owner-info">
+                <img src="img/Mask Group 5.png">
+                <div class="d-flex flex-column p-2">
+                  <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                  <div style="color: #00A747;">Chris Jordan</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card rental-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
+              </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
+              </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text">2360 sq ft</p>
+                </div>
+              </div>
+
+              <div class="card-price">€ 3,50,000</div>
+              <div class="owner-info">
+                <img src="img/Mask Group 5.png">
+                <div class="d-flex flex-column p-2">
+                  <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                  <div style="color: #00A747;">Chris Jordan</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card rental-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
+              </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
+              </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text">2360 sq ft</p>
+                </div>
+              </div>
+
+              <div class="card-price">€ 3,50,000</div>
+              <div class="owner-info">
+                <img src="img/Mask Group 5.png">
+                <div class="d-flex flex-column p-2">
+                  <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                  <div style="color: #00A747;">Chris Jordan</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col">
+          <div class="card rental-cards">
+            <div class="featured-badge">
+              <a href="#" style="text-decoration: none;">
+                <div class="no-of-clicks">
+                  <span style="font-size: 15px;">4</span>
+                  <img src="img/ic_camera_alt_24px.png" width="20" height="18">
+                </div>
+                <img src="img/Mask Group 2@2x.png" class="card-img-top" alt="...">
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-heading">A Grand Modern Apartment</div>
+              <div class="card-sub-heading">
+                <i class="card-icon"><img src="img/ic_location_on_24px.png"></i>
+                <p class="card-text">Birmingham, United Kingdom</p>
+              </div>
+              <div class="card-categories">
+                <p>Bedrooms</p>
+                <p>Bathrooms</p>
+                <p>Area</p>
+              </div>
+              <div class="card-services">
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                  <p class="card-text">3</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                  <p class="card-text">2</p>
+                </div>
+                <div class="card-sub-heading">
+                  <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                  <p class="card-text">2360 sq ft</p>
+                </div>
+              </div>
+
+              <div class="card-price">€ 3,50,000</div>
+              <div class="owner-info">
+                <img src="img/Mask Group 5.png">
+                <div class="d-flex flex-column p-2">
+                  <div style="color:#9A9A9A; text-decoration: underline;">Owner</div>
+                  <div style="color: #00A747;">Chris Jordan</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="d-flex justify-content-center align-items-center" style="background-color:#00A747;">1</div>
+        <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">2</div>
+        <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">3</div>
+        <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">4</div>
+        <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">5</div>
+        <div class="d-flex justify-content-center align-items-center" style="background-color: #ffffff;">6</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+
+  <div class="_2f01ad7d">
+    <div class="_035521cc">
+      <div class="lazyload-wrapper ">
+        <div style="" class="d29e163a">
+          <div class="eecc1d16">
+            <div class="e779da4e">Get the Property Baba App</div>
+            <div class="_5005c3df">Rent and buy property faster and better on <br>our app. </div>
+          </div>
+          <div class="bfe1194d">
+            <div class="_0e2528e5">
+              <a href="#">
+                <div class="_99d01467">
+                </div>
+              </a>
+              <a href="">
+                <div class="_40bad90a"></div>
+              </a>
+            </div>
+            <div class="e8e082f9">
+              <div class="eed449e1">
+                <div class="e81f2a64">Scan the QR code <br>to download the app</div>
+                <div class="_8e9ddfc2"></div>
+              </div>
+              <div class="d2e9372e"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Our Partners-->
+
+
+  <!--Our partners-->
+  <div class="_8b4880fe">
+    <div class="_035521cc">
+      <div class="_3cfee633">
+        <div class="bb8c9385">
+          <div class="meet-our">Meet Our</div>
+          <div class="_2cce6008">Partners</div>
+
+          <div class="_509724c2">
+            <span class="_85f0c96b">
+              <img src="img/Mask Group 21.png" alt="HBL Bank" class="e2e28acc"></span>
+            <span class="_85f0c96b">
+              <img src="img/lineart_logo_letter_u_modern_color.png" alt="SCB Bank" class="e2e28acc"></span>
+            <span class="_85f0c96b">
+              <img src="img/preview.png" alt="JS Bank" class="e2e28acc"></span>
+            <span class="_85f0c96b">
+              <img src="img/Mask Group 19.png" alt="HBFC" class="e2e28acc"></span>
+            <span class="_85f0c96b">
+              <img src="img/Mask Group 20.png" alt="Habib Bank" class="e2e28acc"></span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Dark Footer-->
+  <footer>
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col">
+          <div style="color: #00A747; font-size: 1.5rem; font-weight: bold;" class="text-center"><img
+              src="img/propertybaba logo.png"></div>
+          <div class="p-3" style="font-size: 15px; font-weight: medium;">Get in Touch</div>
+          <div class="phone p-3" style="font-size: 12px;"><img src="img/phone.png"
+              class="footer-icons-spacing">07393939800</div>
+          <div class="email p-3" style="font-size: 12px;"><img src="img/mail.png"
+              class="footer-icons-spacing">info@propertybaba.com</div>
+          <div class="address p-3" style="font-size: 12px;"><img src="img/footer-location-icon.png"
+              class="footer-icons-spacing">
+            97 Vincent Drive, Birmingham B15 2SQ</div>
+
+        </div>
+
+        <div class="col">
+          <div class="p-3" style="font-size: 15px; font-weight: medium;">Quick Links</div>
+          <div class="link-1 p-3" style="font-size: 12px;">
+            <a href="#" style="text-decoration: none; color: #ffffff;">Home</a>
+            <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto">Services</a>
+          </div>
+          <div class="link-2 p-3" style="font-size: 12px;">
+            <a href="#" style="text-decoration: none; color: #ffffff;">Property</a>
+            <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto">Contact Us</a>
+          </div>
+          <div class="link-3 p-3" style="font-size: 12px;">
+            <a href="#" style="text-decoration: none; color: #ffffff;">
+              <p>Properties</p>
+            </a>
+            <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto">
+              <p>About Us</p>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="p-2" style="font-size: 15pxrem; font-weight: medium;">Socials</div>
+          <div class="social-icons">
+            <a href="#"><img src="img/twitter.png"></a>
+            <a href="#"><img src="img/facebook.png"></a>
+            <a href="#"><img src="img/youtube.png"></a>
+            <a href="#"><img src="img/instagram (1).png"></a>
+          </div>
+          <div class="google-icons pt-5">
+            <img src="img/Google_Play-Badge-Logo.wine.png" width="143" height="42">
+            <img src="img/app-store.png" width="143" height="42">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
+  <div class="d-flex justify-content-center align-items-center"
+    style="height: 52px; width: 100%; background-color: #00A747; z-index: 1000; color: #ffffff; font-size: 13px; font-weight: medium;">
+    © Copyright 2022 Property Baba. All Rights Reserved
+  </div>
+  <!--Footer End-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
 </body>
+
 </html>

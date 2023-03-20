@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Property Baba</title>
+</head>
+
+<body>
+  <!--Header Start-->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/propertybaba logo.png" alt="Bootstrap" width="82" height="49.16">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listView.html">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Property</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Service 1</a></li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <li class="nav-item" style="list-style-type: none;">
+            <a id="loginBtn" style="cursor: pointer;" class="nav-link login" >Login</a>
+          </li>
+          <li class="nav-item" style="list-style-type: none;">
+            <a class="nav-link login login-btn" href="#"
+              style="border: 1px solid #00A747;border-radius: 10px; padding-right: 10px!important;
+              padding-left: 10px!important;
+          ">Become a Seller</a>
+          </li>
+
+
+          <!-- <button class="" type="submit">Become a Seller</button>  -->
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Header End-->
+
+
+
+
+  <!-- Login Modal start -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <div class="login-m1">
+      <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
+      <h2 class="lgm-h2">WELCOME TO PROPERTY BABA</h2>
+      <P class="lgm-pt">The trusted community of<br> buyers and sellers</P>
+      <button class="lgm-btn"><span><img src="" /></span>Continue with Email</button>
+      <button class="lgm-btn"><span><img src="" /></span>Continue with Facebook</button>
+      <button class="lgm-btn"><span><img src="" /></span>Continue with Google</button>
+      <p class="lgm-pb">By Continuing, you are accepting <span><b>Property Baba</b><a href="#">Terms of use</a></span> and <span><a href="#">Privacy Policy</a></span></p>
+    </div>
+
+  </div>
+
+</div>
+  <!-- Login Modal End -->
+
+
+
+  <!--Hero Section Start-->
+  <section id="hero" class="grid-view-hero-section">
+
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+      <div class="row">
+        <div class="col mt-5">
+          <div class="search-area">
+            <h1 class="search-heading">Search property to Rent or Buy at <span>Property Baba</span></h1>
+            <div class="search-buttons">
+              <button class="to-buy is_active" id="to-buy">To Buy</button>
+              <button class="to-buy" id="to-rent">To Rent</button>
+            </div>
+            <div style="margin: 15px; border-radius: 5px;" id="buy-toggle" class="inputs-area">
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Property type"> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Property Type</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="location-input">
+                  <input type="text" class="location" placeholder="">
+                  <img src="img/location-icon.png">
+                </div>
+
+              </div>
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
+                        <input type="text" class="property-type" placeholder="Area">
+                        <input type="text" class="property-type" placeholder="Price (Euro)"> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Beds & Bathrooms</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Area</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Price (Euro)</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input type="submit" class="" placeholder="Search" value="SEARCH">
+              </div>
+              <div class="d-flex justify-content-end">
+                <a style="color: #ffffff; font-size: 13px; padding-right: 0.5rem; padding-top: 10px;">Reset Search</a>
+              </div>
+            </div>
+            <!--Div to Toggle-->
+            <div style="margin: 15px; border-radius: 5px; display: none;" id="rent-toggle" class="inputs-area">
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Property type"> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Property Type</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="location-input">
+                  <input type="text" class="location" placeholder="">
+                  <img src="img/location-icon.png">
+                </div>
+
+              </div>
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
+                    <input type="text" class="property-type" placeholder="Area">
+                    <input type="text" class="property-type" placeholder="Price (Euro)"> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Beds & Bathrooms</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Area</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Price (Euro)</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input type="submit" class="" placeholder="Search">
+              </div>
+              <div class="d-flex justify-content-end">
+                <a style="color: #ffffff; font-size: 13px; padding-right: 0.5rem; padding-top: 10px;">Reset Search 2</a>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Hero Section End-->
+
+  <!--Light Box Area Start-->
+
+ <section class="light-box mt-5 mb-5">
+    <div class="container grand-apartment">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Houses</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col grand-apartment-heading d-flex align-items-center">
+                A Grand Modern Apartment
+            </div>
+        </div>
+        <div class="row">
+            <div class="col grand-apartment-gallery pt-5">
+                <img src="img/Mask Group 22.png">
+            </div>
+        </div>
+    </div>
+
+ </section>
+
+  <!--Light Box area end-->
+
+  <section class="">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 property-details">
+                <div class="d-flex p-5">
+                    <div class="property-id-heading">Property ID:</div>
+                    <div class="property-id me-auto">PB-0001A</div>
+                    <div class="share-icon"><img src="img/ic_share_24px.png"></div>
+                    <div class="like-icon"><img src="img/ic_favorite_24px.png"></div>
+                </div>
+                <div class="initials">
+                    <div class="card-categories">
+                        <p>Bedrooms</p>
+                        <p>Bathrooms</p>
+                        <p>Area</p>
+                      </div>
+                      <div class="card-services">
+                        <div class="card-sub-heading">
+                          <i class="card-icon"><img src="img/icons8-bedroom-100.png"></i>
+                          <p class="card-text" style="color: #00B674;">3</p>
+                        </div>
+                        <div class="card-sub-heading">
+                          <i class="card-icon"><img src="img/icons8-bathtub-100.png"></i>
+                          <p class="card-text" style="color: #00B674;">2</p>
+                        </div>
+                        <div class="card-sub-heading">
+                          <i class="card-icon"><img src="img/icons8-surface-96.png"></i>
+                          <p class="card-text" style="color: #00B674;">2360 sq ft</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="property-desc p-5">
+                    <div class="property-desc-heading">Description</div>
+                    <div class="property-desc-paragraph">
+                        As soon as you walk into this Point Grey home you will be struck by the open space and clean lines – the perfect canvas on which to create your dream home. Situated across from unique Elk Lake, the floor plan has been beautifully adapted to modern life. Over 1,100 sq ft of living space which includes 2 beds and 2 bathrooms. Unique zoning for the building allows for legal short term rentals, pets allowed and a great onsite caretaker make this a worry free home. The extensive 2007 renovation has expanded floor space and functionality while respecting the integrity of the original design. It is ideally situated on a very private lot along a whisper quiet street. Beautiful log construction home on 1 acre. Smart Wiring Options, granite island, feature wall unit w/fireplace, field stone fireplace and drive in garage with workshop area lend a sophisticated feel to the home.
+                    </div>
+
+                </div>
+                <div class="key-features p-5">
+                    <div class="key-features-heading">
+                        Key Features
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col g-0">
+                            <ul class="key-items d-flex flex-column justify-content-between">
+                                <li><img src="img/ic_check_24px.png">Air Conditioning</li>
+                                <li><img src="img/ic_check_24px.png">Shower</li>
+                                <li><img src="img/ic_check_24px.png">Central Heating</li>
+                            </ul>
+                        </div>
+                        <div class="col g-0">
+                            <ul class="key-items d-flex flex-column justify-content-between">
+                                <li><img src="img/ic_check_24px.png">5 Bedrooms</li>
+                                <li><img src="img/ic_check_24px.png">Parking Garage</li>
+                                <li><img src="img/ic_check_24px.png">Fully tilled Bathrooms</li>
+                            </ul>
+                        </div>
+                        <div class="col g-0">
+                            <ul class="key-items d-flex flex-column justify-content-between">
+                                <li><img src="img/ic_check_24px.png">4 Bathrooms</li>
+                                <li><img src="img/ic_check_24px.png">Garden</li>
+                                <li><img src="img/ic_check_24px.png">Kitchen</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="prop-maps">
+                    <div class="prop-maps-heading">Property on Map</div>
+
+                </div>
+            </div>
+            <div class="col-4">
+gkhglh
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+   <!--Dark Footer-->
+   <footer>
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col">
+          <div style="color: #00A747; font-size: 1.5rem; font-weight: bold;" class="text-center"><img
+              src="img/propertybaba logo.png"></div>
+          <div class="p-3" style="font-size: 15px; font-weight: medium;">Get in Touch</div>
+          <div class="phone p-3" style="font-size: 12px;"><img src="img/phone.png"
+              class="footer-icons-spacing">07393939800</div>
+          <div class="email p-3" style="font-size: 12px;"><img src="img/mail.png"
+              class="footer-icons-spacing">info@propertybaba.com</div>
+          <div class="address p-3" style="font-size: 12px;"><img src="img/footer-location-icon.png"
+              class="footer-icons-spacing">
+            97 Vincent Drive, Birmingham B15 2SQ</div>
+
+        </div>
+
+        <div class="col">
+          <div class="p-3" style="font-size: 15px; font-weight: medium;">Quick Links</div>
+          <div class="link-1 p-3" style="font-size: 12px;">
+            <a href="#" style="text-decoration: none; color: #ffffff;">Home</a>
+            <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto">Services</a>
+          </div>
+          <div class="link-2 p-3" style="font-size: 12px;">
+            <a href="#" style="text-decoration: none; color: #ffffff;">Property</a>
+            <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto">Contact Us</a>
+          </div>
+          <div class="link-3 p-3" style="font-size: 12px;">
+            <a href="#" style="text-decoration: none; color: #ffffff;">
+              <p>Properties</p>
+            </a>
+            <a href="#" style="text-decoration: none; color: #ffffff;" class="mx-auto">
+              <p>About Us</p>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="p-2" style="font-size: 15pxrem; font-weight: medium;">Socials</div>
+          <div class="social-icons">
+            <a href="#"><img src="img/twitter.png"></a>
+            <a href="#"><img src="img/facebook.png"></a>
+            <a href="#"><img src="img/youtube.png"></a>
+            <a href="#"><img src="img/instagram (1).png"></a>
+          </div>
+          <div class="google-icons pt-5">
+            <img src="img/Google_Play-Badge-Logo.wine.png" width="143" height="42">
+            <img src="img/app-store.png" width="143" height="42">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
+  <div class="d-flex justify-content-center align-items-center"
+    style="height: 52px; width: 100%; background-color: #00A747; z-index: 1000; color: #ffffff; font-size: 13px; font-weight: medium;">
+    © Copyright 2022 Property Baba. All Rights Reserved
+  </div>
+  <!--Footer End-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
