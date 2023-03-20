@@ -1160,4 +1160,50 @@ footer{
     font-size: 16px;
     color: #00A747;
 }
+.load-more{
+    width: 140px;
+    height: 55px;
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+    color: #00A747;
+    border: none;
+}
+.for-sale{
+    height: 197px; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+.for-sale-heading{
+    height: 56px;
+    background-color: #00A747;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.for-sale-body{
+    background-color: #ffffff;
+    padding: 1rem;
+}
+.for-sale-location{
+    color: #9A9A9A;
+    text-decoration: underline;
+    padding: 0.5rem;
+}
+.for-sale-price{
+    color: #00A747;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.chat-seller{
+    width: 344px;
+    height: 57px;
+    background-color: #00A747;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
