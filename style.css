@@ -1169,7 +1169,7 @@ footer{
     border: none;
 }
 .for-sale{
-    height: 197px; 
+    height: max-content; 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
 }
 .for-sale-heading{
@@ -1197,13 +1197,37 @@ footer{
 }
 
 .chat-seller{
-    width: 344px;
+    width: 300px;
     height: 57px;
     background-color: #00A747;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
+   
+}
+.chat-seller img{
+    padding-right: 5px;
+}
+.seller-offer{
+    width: 300px;
+    height: 57px;
+    background-color: #00A747;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.seller-offer img{
+    padding-right: 5px;
+}
+.report-ad{
+    float: right;
+    color: #9A9A9A;
+    font-size: 15px;
+
 }
 
 
