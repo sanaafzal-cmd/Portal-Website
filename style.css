@@ -10,9 +10,6 @@ body{
 a:hover{
     color: #00000044;
 }
-
-
-
 /* Modal Style start */
 
 
@@ -1259,6 +1256,23 @@ footer{
     height: max-content;
     background-color: #ffffff;
   }
-  
+  .team-cards{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+    border: none !important;
+  }
+  .about-us{
+    height: max-content;
+    background-color: #ffffff !important;
+  }
+  .about-us-heading{
+    color: #00A747;
+    font-size: 34px;
+  }
+  .about-us-desc{
+    font-size: 22px;
+    line-height: 37px;
+   
+    text-align: center;
+  }
   
 
