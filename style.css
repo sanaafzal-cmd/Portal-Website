@@ -1256,6 +1256,21 @@ footer{
     height: max-content;
     background-color: #ffffff;
   }
+
+  /* About Us Styling*/
+
+  .about-hero {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
   .team-cards{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
     border: none !important;
@@ -1273,6 +1288,9 @@ footer{
     line-height: 37px;
    
     text-align: center;
+  }
+  .testimonial-section{
+    background-color: #ffffff;
   }
   
 
