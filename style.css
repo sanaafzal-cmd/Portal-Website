@@ -918,7 +918,7 @@ footer{
 {
     float: none;
     width: 100%;
-    background-color: #fff;
+   
     margin-bottom: 30px;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -939,9 +939,7 @@ footer{
     display: none;
 }
 
-.caption2{
-    display: none;
-}
+
 .item.list-group-item .thumbnail
 {
     margin-bottom: 0px;
@@ -950,14 +948,27 @@ footer{
 .item.list-group-item .caption
 {
     float: left;
-    width: 50%;
+    width: 40%;
     margin: 0;
 }
+.item.grid-group-item .caption2{
+    display: none;
+}
+.item.list-group-item .caption2{
+
+    display: block;
+    float: right;
+    width: 20%;
+}
+.item.list-group-item .list-view-para{
+    display: block;
+}
+
 
 .item.list-group-item:before, .item.list-group-item:after
 {
     display: table;
-    content: " ";
+    content: "";
 }
 
 .item.list-group-item:after
