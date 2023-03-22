@@ -881,8 +881,8 @@ footer{
   
    /* List View */
    .list-view-hero{
-    background: url(img/list-view-hero.png);
-    height: 90vh;
+    background: url(img/contact-hero.png);
+    height:70vh;
     background-size: contain;
     object-fit: contain;
     background-attachment: scroll;
@@ -890,7 +890,7 @@ footer{
   
    }
    .search-form-list{
-    margin-top: 150px;
+    margin-top: 80px;
    }
 
    /* Grid & List View Switcher */
@@ -910,6 +910,8 @@ footer{
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
 }
 
 .item.list-group-item
@@ -926,12 +928,19 @@ footer{
 }
 .item.list-group-item .img-event {
     float: left;
-    width: 30%;
+    width: 40%;
 }
 
 .item.list-group-item .list-group-image
 {
-    margin-right: 10px;
+    /* margin-right: 10px; */
+}
+.item.list-group-item .owner-info{
+    display: none;
+}
+
+.caption2{
+    display: none;
 }
 .item.list-group-item .thumbnail
 {
@@ -941,7 +950,7 @@ footer{
 .item.list-group-item .caption
 {
     float: left;
-    width: 70%;
+    width: 50%;
     margin: 0;
 }
 
@@ -965,15 +974,13 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 10px;
+    
 
 }
+
 .footer-icons-spacing{
     padding-right: 8px;
 }
-
-  
-
-
 
 .city-info {
     position: absolute;
