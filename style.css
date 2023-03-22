@@ -1229,7 +1229,7 @@ footer{
 
 /* Contact Us Page Styling */
 
-.contact-us-hero{
+/* .contact-us-hero{
     background: url(img/list-view-hero.png);
     height: 438px;
     background-size: cover;
@@ -1238,7 +1238,7 @@ footer{
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 28%);
    
-}
+} */
 
 .container-contact{
     position: relative;
@@ -1256,6 +1256,12 @@ footer{
     height: max-content;
     background-color: #ffffff;
   }
+  .centered-contact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   /* About Us Styling*/
 
@@ -1263,6 +1269,7 @@ footer{
     position: relative;
     text-align: center;
     color: white;
+    
   }
   .centered {
     position: absolute;
