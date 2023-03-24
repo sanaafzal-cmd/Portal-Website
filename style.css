@@ -938,6 +938,9 @@ footer{
 .item.list-group-item .owner-info{
     display: none;
 }
+.item.list-group-item .card-price{
+display: none;
+}
 
 
 .item.list-group-item .thumbnail
@@ -950,15 +953,35 @@ footer{
     float: left;
     width: 40%;
     margin: 0;
+   
 }
 .item.grid-group-item .caption2{
     display: none;
 }
+.item.grid-group-item .myClass{
+    display: none;
+}
+
+.item.list-group-item .myClass{
+    display: block;
+}
+
+.myClass{
+    color: #9A9A9A;
+    font-size: 15px;
+}
+
 .item.list-group-item .caption2{
 
-    display: block;
-    float: right;
+    display: flex;
+    flex-direction: column;
+    /* float: right; */
     width: 20%;
+    padding: 20px;
+    border-left: 1px solid #9A9A9A;
+    margin: 30px;
+   
+  
 }
 .item.list-group-item .list-view-para{
     display: block;
