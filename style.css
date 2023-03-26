@@ -40,6 +40,7 @@ button.lgm-btn {
     text-align: center;
 }
 
+
 p.lgm-pb {
     font-size: x-small;
     margin-top: 15px;
@@ -71,6 +72,7 @@ p.lgm-pt {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
+ 
   
   /* Modal Content */
   .modal-content {
@@ -81,8 +83,37 @@ p.lgm-pt {
     width: 25%;
     border-radius: 0px;
   }
+  .input-email{
+    width: -webkit-fill-available;
+    /* width: fit-content; */
+    margin: 3px;
+    padding: 10px;
+    border: 1 #00A948;
+    border: 1 #00A948;
+    border-width: thin;
+    border-color: #00A948;
+    border-style: solid;
+    border-radius: 4px;
+    background: #ffffff00;
+    font-size: small;
+    text-align: -webkit-auto;
+    color: #00A948;
+    font-weight: 100;
+  }
+  .next-btn{
+    background-color: #00A747;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    font-size: small;
+    width: -webkit-fill-available;
+    /* width: fit-content; */
+    margin: 3px;
+    padding: 10px;
+  }
+ 
   
-  /* The Close Button */
+  /* The Close Button*/
   .close {
     color: #aaaaaa;
     float: right;
@@ -90,9 +121,10 @@ p.lgm-pt {
     font-weight: bold;
     height: fit-content;
     width: fit-content;
-    align-self: end;
-    z-index: 2;
-  }
+    align-self: end; 
+     z-index: 2;
+  } 
+
   
   .close:hover,
   .close:focus {
@@ -100,8 +132,61 @@ p.lgm-pt {
     text-decoration: none;
     cursor: pointer;
   }
+  /* .go-back {
+    color: #9A9A9A;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+    /* align-self: self-start; */
+    /* z-index: 2;
+  } */ 
+  .go-back:hover,
+  .go-back:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* enter code */
+  .enter-code{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+  .cd-box{
+        width: 62px;
+        height: 59px;
+        border: 1px solid #00A747;
+  }
+  .customer-btn{
+    height: 43px;
+    width: 155px;
+    background-color: #E0F5EE;
+    color: #00A747;
+    font-size: 18px;
+    font-weight: 100;
+    border: none;
+    border-radius: 4px;
+  }
+  .seller-btn{
+    height: 43px;
+    width: 155px;
+    background-color: #00A747;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+    border: none;
+    border-radius: 4px;
+  }
 
   /* Modal Style end */
+
+ 
+  
 
 /*
 header{

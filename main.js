@@ -72,4 +72,23 @@ window.onclick = function(event) {
 }
    
 
+// // Login with Email Modal
+
+// var modal1 = document.getElementById('loginWithEmail');
+
+// var btn1 = document.getElementById('lge');
+
+// btn1.onclick = function() {
+//   modal1.style.display = "block";
+//   modal.style.display = 'none';
+// }
+
+// // Get the <span> element that takes you back the modal
+// var span1 = document.getElementsByClassName("go-back")[0];
+
+// span1.onclick = function(){
+//   modal1.style.display = "none";
+//   modal.style.display = 'block';
+// }
+
 
