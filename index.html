@@ -105,13 +105,14 @@
   <!-- Login Modal End -->
 
   <!--Login with Email Modal start-->
-  <div id="loginWithEmail" class="login-with-email">
+  <div id="loginWithEmail" class="login-with-email modal">
      <!-- Modal content -->
   <div class="modal-content">
-    <div class="d-flex justify-content-between">
-      <i class="fa-solid fa-arrow-left" style="color: #9A9A9A;"></i>
-      <i class="fa-solid fa-xmark" style="color: #9A9A9A;" ></i>
-    </div>
+    <span class="close">&times;</span>
+    <!-- <div class="d-flex justify-content-between">
+      <i class="fa-solid fa-arrow-left go-back-e" style="color: #9A9A9A;"></i>
+      <i class="fa-solid fa-xmark close-e" style="color: #9A9A9A;" ></i>
+    </div> -->
    
     
     
@@ -119,7 +120,7 @@
       <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
       <h2 class="lgm-h2 mt-2 mb-2">Enter your Email</h2>
       <input type="text" placeholder="Email" class="input-email"/>
-     <button class="next-btn text-center mt-3">NEXT</button>
+     <button class="next-btn text-center mt-3" id="next-modal">NEXT</button>
       <p style="color: #9A9A9A; font-size: 12px;" class="mb-3 mt-3">We won't reveal your email to anyone else nor use it to 
         send you spam.</p>
     </div>
@@ -132,13 +133,14 @@
   <!--Login with Email Modal Ends-->
 
   <!--Set Password Model Start-->
-  <div id="setPassword" class="set-password">
+  <div id="setPassword" class="set-password modal">
     <!-- Modal content -->
  <div class="modal-content">
-   <div class="d-flex justify-content-between">
+  <span class="close">&times;</span>
+   <!-- <div class="d-flex justify-content-between">
      <i class="fa-solid fa-arrow-left" style="color: #9A9A9A;"></i>
      <i class="fa-solid fa-xmark" style="color: #9A9A9A;" ></i>
-   </div>
+   </div> -->
    <div class="login-m1">
      <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
      <h2 class="lgm-h2 mt-2 mb-2">Create a password to login faster
@@ -147,7 +149,7 @@
         This will help you login faster next time</p>
      <input type="text" placeholder="New Password" class="input-email mt-2 mb-2"/>
      <input type="text" placeholder="Confirm Password" class="input-email mt-2 mb-2"/>
-    <button class="next-btn text-center mt-3">Create Password</button>
+    <button class="next-btn text-center mt-3" id="create-password">Create Password</button>
    
    </div>
 
@@ -158,14 +160,15 @@
 
   <!--Set Password Model Ends-->
 
-  <!--Code Received Model Start-->
-  <div id="codeReceived" class="code-received">
+  <!--OTP Modal Start-->
+  <div id="otpReceived" class="otp-received modal">
     <!-- Modal content -->
  <div class="modal-content">
-   <div class="d-flex justify-content-between">
+  <span class="close">&times;</span>
+   <!-- <div class="d-flex justify-content-between">
      <i class="fa-solid fa-arrow-left" style="color: #9A9A9A;"></i>
      <i class="fa-solid fa-xmark" style="color: #9A9A9A;" ></i>
-   </div>
+   </div> -->
    <div class="login-m1">
      <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
      <h2 class="lgm-h2 mt-2 mb-2">Enter Code Recieved</h2>
@@ -179,21 +182,22 @@
     <div class="cd-box"></div>
     <div class="cd-box"></div>
    </div>
-   <p style="color: #00A747; text-align: center; font-size: 15px;" class="mt-2">RESEND CODE </p>
+   <p style="color: #00A747; text-align: center; font-size: 15px;" class="mt-2" id="resend-code">RESEND CODE </p>
    <p style="color: #9A9A9A; font-size: 12px; text-align: center;" class="mb-3 mt-3">We won't reveal your email to anyone else nor use it to 
     send you spam.</p>
  </div>
  </div>
-  <!--Code Received Model Ends-->
+  <!--OTP Modal Ends-->
 
   <!--welcome popup model start-->
-  <div id="popupWelcome" class="popup-welcome">
+  <div id="popupWelcome" class="popup-welcome modal">
     <!-- Modal content -->
  <div class="modal-content">
-   <div class="d-flex justify-content-between">
+  <span class="close">&times;</span>
+   <!-- <div class="d-flex justify-content-between">
      <i class="fa-solid fa-arrow-left" style="color: #9A9A9A;"></i>
      <i class="fa-solid fa-xmark" style="color: #9A9A9A;" ></i>
-   </div>
+   </div> -->
    <div class="login-m1">
      <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
      <div>

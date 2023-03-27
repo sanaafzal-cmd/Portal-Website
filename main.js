@@ -74,21 +74,109 @@ window.onclick = function(event) {
 
 // // Login with Email Modal
 
-// var modal1 = document.getElementById('loginWithEmail');
+var modalE = document.getElementById('loginWithEmail');
 
-// var btn1 = document.getElementById('lge');
+var btnE = document.getElementById('lge');
 
-// btn1.onclick = function() {
-//   modal1.style.display = "block";
-//   modal.style.display = 'none';
-// }
+btnE.onclick = function() {
+  modalE.style.display = "block";
+  modal.style.display = 'none';
+}
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close")[1];
 
-// // Get the <span> element that takes you back the modal
-// var span1 = document.getElementsByClassName("go-back")[0];
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+  modalE.style.display = "none";
+}
 
-// span1.onclick = function(){
-//   modal1.style.display = "none";
-//   modal.style.display = 'block';
-// }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalE) {
+    modalE.style.display = "none";
+  }
+}
+
+// // Set Password
+
+var modalP = document.getElementById('setPassword');
+
+var btnP = document.getElementById('next-modal');
+
+btnP.onclick = function() {
+  modalP.style.display = "block";
+  modalE.style.display = 'none';
+}
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close")[2];
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modalP.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalP) {
+    modalP.style.display = "none";
+  }
+}
+
+// OTP
+
+var modalO = document.getElementById('otpReceived');
+
+var btnO = document.getElementById('create-password');
+
+btnO.onclick = function() {
+  modalO.style.display = "block";
+  modalP.style.display = 'none';
+}
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close")[3];
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+  modalO.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalO) {
+    modalO.style.display = "none";
+  }
+}
+
+//Welcome POPUP
+
+var modalW = document.getElementById('popupWelcome');
+
+var btnW = document.getElementById('resend-code');
+
+btnW.onclick = function() {
+  modalW.style.display = "block";
+  modalO.style.display = 'none';
+}
+
+// Get the <span> element that closes the modal
+var span4 = document.getElementsByClassName("close")[4];
+
+// When the user clicks on <span> (x), close the modal
+span4.onclick = function() {
+  modalW.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalW) {
+    modalW.style.display = "none";
+  }
+}
+
+
+
 
 

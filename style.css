@@ -124,6 +124,13 @@ p.lgm-pt {
     align-self: end; 
      z-index: 2;
   } 
+  .fa-solid:hover,
+  .fa-solid:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+  }
 
   
   .close:hover,
