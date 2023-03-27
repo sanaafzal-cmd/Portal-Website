@@ -90,6 +90,12 @@ span1.onclick = function() {
   modalE.style.display = "none";
 }
 
+// Get the <span> element that goes back to previous modal
+var goBack1 = document.getElementsByClassName("go-back")[0];
+goBack1.onclick = function(){
+  modal.style.display = "block";
+  modalE.style.display = "none";
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -114,6 +120,13 @@ var span2 = document.getElementsByClassName("close")[2];
 
 // When the user clicks on <span> (x), close the modal
 span2.onclick = function() {
+  modalP.style.display = "none";
+}
+
+// Get the <span> element that goes back to previous modal
+var goBack2 = document.getElementsByClassName("go-back")[1];
+goBack2.onclick = function(){
+  modalE.style.display = "block";
   modalP.style.display = "none";
 }
 
@@ -143,6 +156,13 @@ span3.onclick = function() {
   modalO.style.display = "none";
 }
 
+// Get the <span> element that goes back to previous modal
+var goBack3 = document.getElementsByClassName("go-back")[2];
+goBack3.onclick = function(){
+  modalP.style.display = "block";
+  modalO.style.display = "none";
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modalO) {
@@ -166,6 +186,13 @@ var span4 = document.getElementsByClassName("close")[4];
 
 // When the user clicks on <span> (x), close the modal
 span4.onclick = function() {
+  modalW.style.display = "none";
+}
+
+// Get the <span> element that goes back to previous modal
+var goBack4 = document.getElementsByClassName("go-back")[3];
+goBack4.onclick = function(){
+  modalO.style.display = "block";
   modalW.style.display = "none";
 }
 

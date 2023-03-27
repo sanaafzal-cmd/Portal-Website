@@ -139,16 +139,16 @@ p.lgm-pt {
     text-decoration: none;
     cursor: pointer;
   }
-  /* .go-back {
+   .go-back {
     color: #9A9A9A;
     float: left;
     font-size: 28px;
     font-weight: bold;
     height: fit-content;
     width: fit-content;
-    /* align-self: self-start; */
-    /* z-index: 2;
-  } */ 
+     align-self: self-start;  
+     z-index: 2;
+  } 
   .go-back:hover,
   .go-back:focus {
     color: #000;
