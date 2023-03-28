@@ -284,6 +284,7 @@ header nav ul li a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
    
     
 }
@@ -624,6 +625,11 @@ border: 1px solid #E0F5EE;
     -ms-flex-align: center;
     align-items: center;
 }
+@media screen and (max-width: 768px) {
+    .d29e163a{
+        background-size: 350px;
+    }
+  }
 .bfe1194d, .eecc1d16 {
     vertical-align: top;
     width: 36rem;
@@ -660,13 +666,24 @@ border: 1px solid #E0F5EE;
     margin-right: 1rem;
     
 }
+/* @media screen and (max-width: 768px) {
+    ._99d01467 {
+        background-size: 100px;
+    } 
+    ._40bad90a{
+        background-size: 100px; 
+    }
+    ._0e2528e5{
+        margin-bottom: 0.5rem;
+    }
+  } */
 ._40bad90a {
     background: url(img/Google_Play-Badge-Logo.wine.png) 50%/contain no-repeat;
 }
 ._40bad90a, ._99d01467 {
-    width: 13.2rem;
-    height: 4rem;
-    display: inline-block;
+     width: 13.2rem;
+    height: 4rem; 
+     display: inline-block; 
 }
 .d2e9372e, .eed449e1 {
     display: inline-block;
@@ -715,6 +732,63 @@ border: 1px solid #E0F5EE;
     justify-content: center;
     border-radius: 11px;
     border: 2px solid #00A747;
+    
+}
+
+@media screen and (max-width:768px) 
+{
+    /* Responsive App Banner */
+._99d01467 
+{
+    height: 40px;
+}
+._40bad90a {
+    height: 37px;
+}
+._0e2528e5 
+{
+    display: initial;
+}
+._2f01ad7d 
+{
+    width: 100%;
+}
+.google-icons.pt-5 {
+    display: inline-grid;
+}
+div#buy-toggle 
+{
+    width: 100%;
+}
+.d29e163a 
+{
+    height: 150px;background-size: contain;
+}
+.e779da4e 
+{
+    font-size: inherit;
+}
+.e81f2a64
+ {/* font-size: inherit; */display: none;
+}
+._5005c3df
+ {
+    font-size: initial;
+}
+.d2e9372e
+ {
+    display: none;
+}.bfe1194d 
+{
+}
+.bfe1194d
+ {
+    width: -webkit-fill-available;margin: px;margin-top: 50px;contain: inline-size;
+}
+.lazyload-wrapper
+ {
+    margin: 20px;
+}
     
 }
 /* Our Partners */
