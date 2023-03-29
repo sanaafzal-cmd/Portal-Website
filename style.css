@@ -391,6 +391,11 @@ input[type="submit"]{
    .location{
     width: 310px;
    }
+   input[type="submit"]{
+    width: 20%;
+   }
+   
+
   }
 .btn-outline-success{
     border: 1px solid #00A747;
@@ -1433,6 +1438,7 @@ display: none;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    border: none;
    
 }
 .chat-seller img{
@@ -1447,6 +1453,7 @@ display: none;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    border: none;
 }
 .seller-offer img{
     padding-right: 5px;
@@ -1492,6 +1499,8 @@ display: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color:#ffffff;
+     font-size: 55px;
   }
 
   /* About Us Styling*/
@@ -1499,15 +1508,28 @@ display: none;
   .about-hero {
     position: relative;
     text-align: center;
-    color: white;
-    
+    color: white; 
   }
+
   .centered {
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color:#ffffff;
+     font-size: 55px;
   }
+  @media screen and (max-width: 768px) {
+    .centered{
+       font-size: 30px ;
+       transform: translate(-50%, -50%);
+    }
+    .centered-contact{
+        font-size: 30px ;
+       transform: translate(-50%, -50%);
+    }
+  }
+  
   
   .team-cards{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
@@ -1522,13 +1544,29 @@ display: none;
     font-size: 34px;
   }
   .about-us-desc{
-    font-size: 22px;
+    font-size: 22px; 
     line-height: 37px;
    
     text-align: center;
   }
+  @media screen and (max-width: 768px) {
+    .about-us-desc{
+        font-size: 15px; 
+    }
+    .testimonial-desc{
+        font-size: 10px !important;
+        
+      }
+  }
   .testimonial-section{
     background-color: #ffffff;
+  }
+  .testimonial-desc{
+    font-size: 20px !important;
+     color: #707070 !important;
+  }
+  .breadcrumb-item a{
+    color: #00A747 !important;
   }
   
 

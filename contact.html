@@ -48,6 +48,9 @@ input[type=submit]:hover {
   .container-form {
   padding: 0px;
 }
+iframe{
+  height: 200px;
+}
 }
 label{
   font-size: 16px;
@@ -58,6 +61,7 @@ label{
  padding-right: 20px;
   
 }
+
 
   </style>
 </head>
@@ -287,8 +291,8 @@ label{
   <!--welcome popup model ends-->
 
   <div class="container-fluid about-hero">
-    <img src="img/contact-hero.png">
-    <div class="centered-contact" style="color:#ffffff; font-size: 55px;">Contact Us</div>
+    <img src="img/contact-hero.png" class="img-fluid">
+    <div class="centered-contact">Contact Us</div>
 
   </div>
 
@@ -299,10 +303,10 @@ label{
     </div>
   </section> -->
 
-  <section class="m-lg-5 m-md-0 p-5">
+  <section class="m-lg-5 m-md-0">
     <div class="container contact-form p-5">
         <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 mb-5">
                 <div class="container-form">
                     <form action="/action_page.php">
                       <label for="fname">Name</label>
@@ -323,10 +327,10 @@ label{
 
             </div>
             <div class="col-lg-6 col-md-12 p-lg-5 p-md-2 mt-md-2">
-               <h3>GIVE US A CALL</h3>
-               <p>Feel free to give us a jingle on the following number and you can contact Us via email </p>
+               <h3 class="pt-lg-0 pt-sm-5">GIVE US A CALL</h3>
+               <p style="text-align: justify;">Feel free to give us a jingle on the following number and you can contact Us via email </p>
                <div class="d-flex p-2">
-                <div class="phone-icon">  <img src="icons/phone.png" alt="phone"></div>
+                <div class="phone-icon">  <img src="icons/phone.png" alt="phone" class="img-fluid"></div>
                 <div class="phone-details">
                     <strong>Phone Number</strong>
                     <p>07393939800</p>
@@ -334,7 +338,7 @@ label{
                </div>
 
                <div class="d-flex p-2">
-                <div class="email-icon"> <img src="icons/mail.png" alt="mail"></div>
+                <div class="email-icon"> <img src="icons/mail.png" alt="mail" class="img-fluid"></div>
                
                 <div class="email-details">
                     <strong>Email Address</strong>
@@ -343,7 +347,7 @@ label{
                </div>
 
                <div class="d-flex p-2">
-                <div class="address-icon"> <img src="icons/ic_location_on_24px.png" alt="address"></div>
+                <div class="address-icon"> <img src="icons/ic_location_on_24px.png" alt="address" class="img-fluid"></div>
                
                 <div class="address-details">
                     <strong>Address</strong>
