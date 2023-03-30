@@ -1081,6 +1081,11 @@ footer{
    .search-form-list{
     margin-top: 80px;
    }
+   @media screen and (max-width:768px) {
+    .search-form-list{
+        margin-top: 40px;
+       }
+   }
 
    /* Grid & List View Switcher */
 
@@ -1197,8 +1202,21 @@ display: none;
     align-items: center;
     justify-content: center;
     margin: 10px;
-    
+}
+.active-grid img{
+    filter: brightness(0) saturate(100%) invert(36%) sepia(91%) saturate(2118%) hue-rotate(128deg) brightness(95%) contrast(107%);
+}
 
+@media screen and (max-width:768px) {
+    .list-button{
+        height: 34px;
+        width: 40px;
+    }
+    .list-button img{
+        height: 20px;
+        width: 20px;
+    }
+    
 }
 
 .footer-icons-spacing{
@@ -1303,6 +1321,8 @@ display: none;
     
   }
 
+  /* List view page styling */
+
   .filter-by-date{
     width:219px;
     height: 44px;
@@ -1318,6 +1338,17 @@ display: none;
     font-size: 17px;
     color: #9A9A9A;
     font-weight: lighter;
+}
+@media screen and (max-width:768px) {
+    .filter-by-date{
+        width:180px;
+        height: 34px;
+        font-size: 13px;
+    }
+    .selected-date{
+        font-size:13px ;
+    }
+    
 }
 
 .grand-apartment-heading {
