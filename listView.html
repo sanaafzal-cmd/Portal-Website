@@ -26,14 +26,17 @@
           event.preventDefault();
           $("#products .item").removeClass("list-group-item");
           $("#products .item").addClass("grid-group-item");
+          $("#products .item").removeClass("caption2");
           $("#grid").addClass("active-grid");
           $("#list").removeClass("active-grid");
+          $("#products .item .thumbnail").addClass("thumbnail-width");
         });
         $("#list").click(function (event) {
           event.preventDefault();
           $("#products .item").addClass("list-group-item");
           $("#list").addClass("active-grid");
           $("#grid").removeClass("active-grid");
+          $("#products .item .thumbnail").removeClass("thumbnail-width");
         
         });
        
@@ -298,140 +301,94 @@
                 <button class="to-buy" id="to-buy">To Buy</button>
                 <button class="is_active" id="to-rent">To Rent</button>
               </div>
-              <div
-                style="margin: 15px; border-radius: 5px"
-                id="buy-toggle"
-                class="inputs-area"
-              >
-                <div class="form-controls">
-                  <!-- <input type="text" class="property-type" placeholder="Property type"> -->
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Property Type</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <div class="location-input">
-                    <input type="text" class="location" placeholder="" />
-                    <img src="img/location-icon.png" />
-                  </div>
-                </div>
-                <div class="form-controls">
-                  <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
-                      <input type="text" class="property-type" placeholder="Area">
-                      <input type="text" class="property-type" placeholder="Price (Euro)"> -->
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Beds & Bathrooms</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Area</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Price (Euro)</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <input type="submit" class="" placeholder="Search" />
-                </div>
-                <div class="d-flex justify-content-end">
-                  <a
-                    style="
-                      color: #ffffff;
-                      font-size: 13px;
-                      padding-right: 0.5rem;
-                      padding-top: 10px;
-                    "
-                    >Reset Search</a
-                  >
-                </div>
-              </div>
               <!--Div to Toggle-->
+           <div style="margin: 15px; border-radius: 5px;" id="buy-toggle" class="inputs-area">
+            <div class="form-controls">
+              <!-- <input type="text" class="property-type" placeholder="Property type"> -->
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Property Type</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="location-input">
+                <input type="text" class="location" placeholder="">
+                <img src="img/location-icon.png">
+              </div>
 
-              <div
-                style="margin: 15px; border-radius: 5px; display: none"
-                id="rent-toggle"
-                class="inputs-area"
-              >
-                <div class="form-controls">
-                  <!-- <input type="text" class="property-type" placeholder="Property type"> -->
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Property Type</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <div class="location-input">
-                    <input type="text" class="location" placeholder="" />
-                    <img src="img/location-icon.png" />
-                  </div>
+            </div>
+            <div class="form-controls">
+              <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
+                  <input type="text" class="property-type" placeholder="Area">
+                  <input type="text" class="property-type" placeholder="Price (Euro)"> -->
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Beds & Bathrooms</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Area</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Price (Euro)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input type="submit" class="" placeholder="Search">
+            </div>
+            <div class="d-flex justify-content-end">
+              <a style="color: #ffffff; font-size: 13px; padding-right: 0.5rem; padding-top: 10px;">Reset Search</a>
+            </div>
+          </div>
+            <!--Div to Toggle-->
+            <div style="margin: 15px; border-radius: 5px; display: none;" id="rent-toggle" class="inputs-area">
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Property type"> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Property Type</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="location-input">
+                  <input type="text" class="location" placeholder="">
+                  <img src="img/location-icon.png">
                 </div>
-                <div class="form-controls">
-                  <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
+
+              </div>
+              <div class="form-controls">
+                <!-- <input type="text" class="property-type" placeholder="Beds & Bathrooms">
                     <input type="text" class="property-type" placeholder="Area">
                     <input type="text" class="property-type" placeholder="Price (Euro)"> -->
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Beds & Bathrooms</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Area</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Price (Euro)</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <input type="submit" class="" placeholder="Search" />
-                </div>
-                <div class="d-flex justify-content-end">
-                  <a
-                    style="
-                      color: #ffffff;
-                      font-size: 13px;
-                      padding-right: 0.5rem;
-                      padding-top: 10px;
-                    "
-                    >Reset Search 2</a
-                  >
-                </div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Beds & Bathrooms</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Area</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Price (Euro)</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input type="submit" class="" placeholder="Search">
               </div>
+              <div class="d-flex justify-content-end">
+                <a style="color: #ffffff; font-size: 13px; padding-right: 0.5rem; padding-top: 10px;">Reset Search 2</a>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -484,7 +441,7 @@
       </div>
       <div id="products" class="row view-group">
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
@@ -543,13 +500,16 @@
             </div>
 
             <!--Outside Caption Start-->
-            <div class="caption2">
-              <div style="color: #00A747; font-size: 22px;">€ 3,50,000</div>
-              <div style="margin-top: 100px;">
-                <span style="color: #9A9A9A; font-size: 15px;">By</span> <br><span style="color: #00a747;">Chris Jordan</span>
+            
+              <div class="caption2">
+                <div style="color: #00A747; font-size: 22px;">€ 3,50,000</div>
+                <div style="margin-top: 100px;">
+                  <span style="color: #9A9A9A; font-size: 15px;">By</span> <br><span style="color: #00a747;">Chris Jordan</span>
+                </div>
+              
               </div>
             
-            </div>
+           
 
             <!--Outside Caption End-->
 
@@ -560,7 +520,7 @@
        
 
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
@@ -633,7 +593,7 @@
           </div>
         </div>
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
@@ -706,7 +666,7 @@
           </div>
         </div>
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
@@ -779,7 +739,7 @@
           </div>
         </div>
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
@@ -852,7 +812,7 @@
           </div>
         </div>
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
@@ -925,7 +885,7 @@
           </div>
         </div>
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
@@ -998,7 +958,7 @@
           </div>
         </div>
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
@@ -1071,7 +1031,7 @@
           </div>
         </div>
         <div class="item col-xs-4 col-lg-4 d-flex justify-content-center">
-          <div class="thumbnail card">
+          <div class="thumbnail card thumbnail-width">
             <div class="img-event">
               <img
                 class="group list-group-image img-fluid"
