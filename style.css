@@ -255,7 +255,7 @@ header nav ul li a{
     color: #00A948 !important;
 }
 .hero-section{
-    background: url(img/hero-img.png);
+    background-image: url(img/hero-img.png);
     height: 60vh;
     background-size: cover;
     background-position: center center;
@@ -1084,12 +1084,12 @@ footer{
     .search-form-list{
         margin-top: 40px;
        }
-       .list-view-hero, .hero-section{
+       /* .list-view-hero, .hero-section{
         background: url(img/mobile-img.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-       }
+       } */
    }
 
    /* Grid & List View Switcher */
@@ -1153,6 +1153,9 @@ display: none;
     margin: 0;
    
 }
+
+    
+
 /* .item.grid-group-item .caption2{
     display: none;
 } */
