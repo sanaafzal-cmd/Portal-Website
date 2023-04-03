@@ -1614,5 +1614,100 @@ display: none;
   .breadcrumb-item a{
     color: #00A747 !important;
   }
+
+  /* Profile Page Styling */
+
+  .upload-photo-btn{
+    background-color: #00A747;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 3px;
+    width: 150px;
+    height: 46px;
+    border: none;
+  }
+  .basic-info, .gender-dropdown{
+    width: 488px;
+    height: 49px;
+    border-radius: 5px;
+    border: 1px solid #9A9A9A;
+    padding: 10px;
+    color: #9A9A9A;
+    
+
+  }
+  .basic-info::placeholder{
+    font-size: 15px;
+    color: #9A9A9A;
+  }
+
+  .dob-d, .dob-m, .dob-y{
+    height: 49px;
+    width: 156px;
+    border-radius: 5px;
+    border: 1px solid #9A9A9A;
+    padding: 10px;
+    color: #9A9A9A;
+  }
+
+  .dob-d::placeholder, .dob-m::placeholder, .dob-y::placeholder{
+    font-size: 15px;
+  }
+  .select-gender{
+    font-size: 15px;
+    color: #9A9A9A;
+  }
+
+  .about-textarea{
+    padding: 10px;
+    color: #9A9A9A;
+    border-radius: 5px;
+    border: 1px solid #9A9A9A;
+    width: 488px;
+    height: 148px;
+  }
+
+  .about-textarea::placeholder{
+    font-size: 15px;
+    color: #9A9A9A;
+  }
+
+  .connect-btn{
+    width: 314px;
+    height: 50px;
+    border: 1px solid #00A747;
+    background-color: #FFFFFF;
+    color: #00A747;
+  }
+
+  .disconnect-btn{
+    width: 314px;
+    height: 50px;
+    border: 1px solid #FF0000;
+    background-color: #FFFFFF;
+    color: #FF0000;
+  }
+  .update-btn{
+    width: 123px;
+    height: 46px;
+    color: #ffffff;
+    background-color: #00A747;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  .delete-acc-btn{
+    width: 306px;
+    height: 50px;
+    border: 1px solid #FF0000;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #FF0000;
+    font-size: 15px;
+  }
+  .edit-profile{
+    font-size: 15px;
+    color: #343434;
+  }
   
 
