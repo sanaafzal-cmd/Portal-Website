@@ -175,6 +175,12 @@ p.lgm-pt {
         width: 62px;
         height: 59px;
         border: 1px solid #00A747;
+        color: #00A948;
+        padding: 22px;
+        font-size: 25px;
+  }
+  .cd-box:focus{
+    outline-color:#00A948;
   }
   .customer-btn{
     height: 43px;
@@ -1706,6 +1712,46 @@ display: none;
   .edit-profile{
     font-size: 15px;
     color: #343434;
+  }
+  .broker-hero{
+    margin-top: -90px;
+  }
+
+  .step-1{
+    width: 472px;
+    height: 177px;
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 35px;
+  }
+
+  .num-ellipse{
+    position: absolute;
+    left: -30px;
+  }
+  .no-1, .no-2, .no-3{
+    position: absolute;
+    font-size: 27px;
+    color: #00A948;
+    font-weight: bold;
+    left: -5px;
+    bottom: 65px;
+  }
+  .get-started{
+    background-color: #00A948;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    width: 137px;
+    height: 38px;
+  }
+  .broker-images{
+    width: 215px;
+    height: 215px;
   }
   
 

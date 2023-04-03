@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     <!--Font Awesome cdn-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Property Baba</title>
+</head>
+
+<body>
+  <!--Header Start-->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/propertybaba logo.png" alt="Bootstrap" width="82" height="49.16">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listView.html">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gridViewListing.html">Property</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Service 1</a></li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <li class="nav-item" style="list-style-type: none;">
+            <a id="loginBtn" style="cursor: pointer;" class="nav-link login" >Login</a>
+          </li>
+          <li class="nav-item" style="list-style-type: none;">
+            <a class="nav-link login login-btn" href="#"
+              style="border: 1px solid #00A747;border-radius: 10px; padding-right: 10px!important;
+              padding-left: 10px!important;
+          ">Become a Seller</a>
+          </li>
+
+
+          <!-- <button class="" type="submit">Become a Seller</button>  -->
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Header End-->
+
+
+
+
+  <!-- Login Modal start -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <div class="login-m1">
+      <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
+      <h2 class="lgm-h2">WELCOME TO PROPERTY BABA</h2>
+      <P class="lgm-pt">The trusted community of<br> buyers and sellers</P>
+      <button class="lgm-btn d-flex justify-content-evenly" id="lge">
+        <img src="icons/ic_markunread_24px.png" />
+        <span>Continue with Email</span>
+      </button>
+      <button class="lgm-btn d-flex justify-content-evenly" id="lgf">
+        <img src="icons/icons8-facebook-96.png" />
+       <span> Continue with Facebook</span>
+      </button>
+      <button class="lgm-btn d-flex justify-content-evenly" id="lgg">
+        <img src="icons/icons8-google-96.png" />
+       <span>Continue with Google</span> 
+      </button>
+      <p class="lgm-pb">By Continuing, you are accepting <span><b>Property Baba</b><a href="#">Terms of use</a></span> and <span><a href="#">Privacy Policy</a></span></p>
+    </div>
+
+  </div>
+
+</div>
+  <!-- Login Modal End -->
+
+  <!--Login with Email Modal start-->
+  <div id="loginWithEmail" class="login-with-email modal">
+     <!-- Modal content -->
+  <div class="modal-content">
+    <div class="d-flex justify-content-between">
+    <span class="go-back">&larr;</span>
+    <span class="close">&times;</span>
+  </div>
+   
+    <!-- <div class="d-flex justify-content-between">
+      <i class="fa-solid fa-arrow-left go-back-e" style="color: #9A9A9A;"></i>
+      <i class="fa-solid fa-xmark close-e" style="color: #9A9A9A;" ></i>
+    </div> -->
+   
+    
+    
+    <div class="login-m1">
+      <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
+      <h2 class="lgm-h2 mt-2 mb-2">Enter your Email</h2>
+      <input type="text" placeholder="Email" class="input-email"/>
+     <button class="next-btn text-center mt-3" id="next-modal">NEXT</button>
+      <p style="color: #9A9A9A; font-size: 12px;" class="mb-3 mt-3">We won't reveal your email to anyone else nor use it to 
+        send you spam.</p>
+    </div>
+
+  </div>
+    
+
+  </div>
+  
+  <!--Login with Email Modal Ends-->
+
+  <!--Set Password Model Start-->
+  <div id="setPassword" class="set-password modal">
+    <!-- Modal content -->
+ <div class="modal-content">
+  <div class="d-flex justify-content-between">
+    <span class="go-back">&larr;</span>
+    <span class="close">&times;</span>
+  </div>
+   <!-- <div class="d-flex justify-content-between">
+     <i class="fa-solid fa-arrow-left" style="color: #9A9A9A;"></i>
+     <i class="fa-solid fa-xmark" style="color: #9A9A9A;" ></i>
+   </div> -->
+   <div class="login-m1">
+     <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
+     <h2 class="lgm-h2 mt-2 mb-2">Create a password to login faster
+      next time</h2>
+      <p style="color: #9A9A9A; font-size: 12px;" class="mb-3 mt-3">You are creating a password for <span style="color: #00A747;">propertyexample@email.com</span>
+        This will help you login faster next time</p>
+     <input type="text" placeholder="New Password" class="input-email mt-2 mb-2"/>
+     <input type="text" placeholder="Confirm Password" class="input-email mt-2 mb-2"/>
+    <button class="next-btn text-center mt-3 mb-3" id="create-password">Create Password</button>
+   
+   </div>
+
+ </div>
+   
+
+ </div>
+
+  <!--Set Password Model Ends-->
+
+  <!--OTP Modal Start-->
+  <div id="otpReceived" class="otp-received modal">
+    <!-- Modal content -->
+ <div class="modal-content">
+  <div class="d-flex justify-content-between">
+    <span class="go-back">&larr;</span>
+    <span class="close">&times;</span>
+  </div>
+   <!-- <div class="d-flex justify-content-between">
+     <i class="fa-solid fa-arrow-left" style="color: #9A9A9A;"></i>
+     <i class="fa-solid fa-xmark" style="color: #9A9A9A;" ></i>
+   </div> -->
+   <div class="login-m1">
+     <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
+     <h2 class="lgm-h2 mt-2 mb-2">Enter Code Recieved</h2>
+      <p style="color: #9A9A9A; font-size: 12px;" class="mb-3 mt-3">We sent a 4-digit code to <span style="color: #00A747;">propertyexample@email.com</span>
+      </p>
+      <a style="float: right; font-size: 12px; color: #9A9A9A; text-decoration: underline;" href="#">Change Email</a>
+   </div>
+   <div class="enter-code mt-3 mb-3">
+   
+    <input type="text" class="cd-box">
+    <input type="text" class="cd-box">
+    <input type="text" class="cd-box">
+    <input type="text" class="cd-box">
+   </div>
+   <a style="color: #00A747; text-align: center; font-size: 15px; cursor: pointer;" class="mt-2" id="resend-code">RESEND CODE </a>
+   <p style="color: #9A9A9A; font-size: 12px; text-align: center;" class="mb-3 mt-3">We won't reveal your email to anyone else nor use it to 
+    send you spam.</p>
+ </div>
+ </div>
+  <!--OTP Modal Ends-->
+
+  <!--welcome popup model start-->
+  <div id="popupWelcome" class="popup-welcome modal">
+    <!-- Modal content -->
+ <div class="modal-content">
+  <div class="d-flex justify-content-between">
+    <span class="go-back">&larr;</span>
+    <span class="close">&times;</span>
+  </div>
+   <!-- <div class="d-flex justify-content-between">
+     <i class="fa-solid fa-arrow-left" style="color: #9A9A9A;"></i>
+     <i class="fa-solid fa-xmark" style="color: #9A9A9A;" ></i>
+   </div> -->
+   <div class="login-m1">
+     <img class="lgm-logo" src="./img/propertybaba logo.png" alt="logo"/>
+     <div>
+      <p style="font-size: 12px; " class="pt-3">Welcome to the</p>
+      <h2 class="lgm-h2 mt-2 mb-2" style="font-size: 30px;">Property Baba</h2>
+     </div>
+   </div>
+   <div>
+    <p class="pt-4 text-center" style="font-size: 15px; color: #9A9A9A;">How Would you like to continue!</p>
+   </div>
+
+   <div class="d-flex justify-content-between mb-3">
+    <button class="customer-btn">As a Customer</button>
+    <button class="seller-btn">As a Seller</button>
+
+   </div>
+  
+ </div>
+ </div>
+
+
+  <!--welcome popup model ends-->
+
+  <!--Hero Section Start-->
+  <div class="container-fluid about-hero">
+    <img src="img/contact-hero.png" class="img-fluid">
+    <div class="centered-contact fs-2">Finding the <span style="color: #00A747;">right</span><br> Broker for you</div>
+
+  </div>
+
+  <div class="d-flex align-items-center justify-content-center broker-hero">
+    <img src="icons/Group 1410.png" class="position-relative broker-images">
+    <div class="position-relative">
+        <img src="icons/Group 1409.png" class="broker-images">
+        <img src="icons/Group 1412.png" class="position-absolute" style="right:100px; top:210px">
+    </div>
+   
+    <img src="icons/Group 1410.png" class="position-relative broker-images">
+  </div>
+
+  <!--Hero Section Ends-->
+
+  <!--Content Section Start-->
+
+  <div class="d-flex flex-column justify-content-center align-items-center m-5">
+    <div style="font-size: 30px; font-weight: 400;">How it Works</div>
+    <div>Three simple steps to getting your mortgage approved.</div>
+  </div>
+
+  <div>
+    <div class="d-flex align-items-center justify-content-center m-3">
+        <div class="step-1 position-relative">
+            <div class="num-ellipse">
+                <img src="icons/Ellipse 145.png">
+            </div>
+            <div class="no-1">1</div>
+            
+            <div style="font-size: 18px;">Fill in our quick form</div>
+            <div style="font-size:16px ;" class="pt-3">Let us know the basics on our quick enquiry form, then we'll match you to your perfect broker in minutes and it wont impact your credit score.</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center m-3">
+        <div class="step-1 position-relative">
+            <div class="num-ellipse">
+                <img src="icons/Ellipse 145.png">
+            </div>
+            <div class="no-2">2</div>
+            
+            <div style="font-size: 18px;">Get Matched</div>
+            <div style="font-size:16px ;" class="pt-3">We will match you to a real human being who's an expert in your circumstance with a proven track record at finding mortgage wins.</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center m-3">
+        <div class="step-1 position-relative">
+            <div class="num-ellipse">
+                <img src="icons/Ellipse 145.png">
+            </div>
+            <div class="no-3">3</div>
+            
+            <div style="font-size: 18px;">The right advice, first time</div>
+            <div style="font-size:16px ;" class="pt-3">Your expert will find you the best deal that's right for you and be with you every step of the way.</div>
+        </div>
+    </div>
+<div class="d-flex align-items-center justify-content-center m-5">
+    <button class="get-started">Get Started!</button>
+</div>
+   
+   
+  </div>
+
+  <!--Content Section Ends-->
