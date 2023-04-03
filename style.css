@@ -1633,8 +1633,6 @@ display: none;
     border: 1px solid #9A9A9A;
     padding: 10px;
     color: #9A9A9A;
-    
-
   }
   .basic-info::placeholder{
     font-size: 15px;
