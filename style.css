@@ -260,6 +260,11 @@ header nav ul li a{
 .login{
     color: #00A948 !important;
 }
+  .navbar .navbar-collapse {
+    text-align: center;
+
+  }
+
 .hero-section{
     background-image: url(img/hero-img.png);
     height: 60vh;
@@ -1713,6 +1718,19 @@ display: none;
     font-size: 15px;
     color: #343434;
   }
+
+  @media screen and (max-width:786px) 
+  {
+    .basic-info, .gender-dropdown{
+        width: 385px;  
+      }
+      .about-textarea{
+        width: 385px;
+      }
+    
+  }
+
+  /* Find broker page styling */
   .broker-hero{
     margin-top: -90px;
   }
@@ -1793,7 +1811,7 @@ display: none;
         transform: translate(-50%, -50%);
         color:#ffffff;
          font-size: 20px;
-         
+
     
       }
     
