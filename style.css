@@ -1753,5 +1753,50 @@ display: none;
     width: 215px;
     height: 215px;
   }
+  .tick-icon{
+    right:95px;
+     top:190px;
+  }
+  .profile-heading{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+     font-size: 45px;
+     font-weight: 700;
+
+  }
+
+  @media screen and (max-width:786px) {
+    .broker-images{
+        width: 100px;
+        height: 100px;
+    }
+    .broker-hero{
+        margin-top: -40px;
+    }
+    .step-1{
+        width: 400px;
+        height: 177px;
+    }
+    .tick-icon{
+        width: 20px;
+        height: 20px;
+        right: 40px;
+        top: 85px;
+    }
+    .profile-heading{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:#ffffff;
+         font-size: 20px;
+         
+    
+      }
+    
+  }
   
 
