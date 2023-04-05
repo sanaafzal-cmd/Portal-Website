@@ -1861,4 +1861,42 @@ display: none;
     
   }
 
+  /* Relocation Services Page Styling */
+
+  .services-hero{
+    background-color: #ffffff;
+    height: 400px;
+    width: 100%;
+  }
+  .services-hero-heading{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#00A948;
+     font-size: 55px;
+     font-weight: 400;
+
+  }
+  .services-form{
+    background-color: #ffffff;
+  }
+  .address-input{
+    width: 500px;
+    height: 54px;
+    border-radius: 8px;
+    border-color: #00A747;
+    padding-left: 35px;
+  }
+  .pcode-input{
+    width: 136px;
+    height: 54px;
+    border-radius: 8px;
+    border-color: #00A747;
+  }
+  .prop-type{
+    display: flex;
+    gap: 3em;
+  }
+  
 
