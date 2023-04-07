@@ -246,9 +246,10 @@
 
   <!--Hero Start-->
 
-  <div class="services-hero justify-content-center d-flex">
-    <img src="icons/Mask Group 55.png" style="width:1000px; height: 400px;" >
-    <div class="services-hero-heading">Relocation Service</div>
+  <div class="container-fluid about-hero">
+    <img src="icons/Mask Group 55.png" class="img-fluid">
+    <div class="hero-reloc">Relocation Service</div>
+
   </div>
 
   <!--Form Starts-->
@@ -276,31 +277,31 @@
 
 <hr>
 
-<div class="d-flex flex-column justify-content-center align-items-center">
+<div class="d-flex flex-column justify-content-center align-items-center p-3">
     <small>What is your current property type?</small>
-   <div class="prop-type">
+   <div class="prop-type pt-2">
     <div>
-        <figure>
-            <img src="icons/Mask Group 56.png" width="82" height="82">
-            <figcaption>Apartment</figcaption>
+        <figure class="prop-fig">
+            <img src="icons/Mask Group 56.png">
+            <figcaption class="text-center prop-name">Apartment</figcaption>
         </figure>
     </div>
     <div>
-        <figure>
-            <img src="icons/Mask Group 57.png" width="82" height="82">
-            <figcaption>Banglow</figcaption>
+        <figure class="prop-fig">
+            <img src="icons/Mask Group 57.png">
+            <figcaption class="text-center prop-name">Banglow</figcaption>
         </figure>
     </div>
     <div>
-        <figure>
-            <img src="icons/Mask Group 58.png" width="82" height="82">
-            <figcaption>Home</figcaption>
+        <figure class="prop-fig">
+            <img src="icons/Mask Group 58.png">
+            <figcaption class="text-center prop-name">Home</figcaption>
         </figure>
     </div>
     <div>
-        <figure>
-            <img src="icons/Mask Group 59.png" width="82" height="82">
-            <figcaption>Garage</figcaption>
+        <figure class="prop-fig">
+            <img src="icons/Mask Group 59.png">
+            <figcaption class="text-center prop-name">Garage</figcaption>
         </figure>
     </div>
    </div>
@@ -339,18 +340,18 @@
        
 <div class="pt-4 d-flex flex-column">
     <label style="color: #00A747; font-size: 16px;">Enter Date Below</label>
-    <input type="date" name="address" class="address-input">
+    <input type="date" name="address" class="date-input" required>
 </div>
 
 <div class="p-3">
-    <input type="radio" checked="checked" /> 
+    <input type="radio" checked="checked" class="radio-color" /> 
     <label for="html">My moving date is flexible</label>
 </div>
 
 <div style="color: #00A747;" class="p-2">Is there any more you can tell us about your move?</div>
 <div class="p-2">e.g. are there any access issues at either destination? Do you have any large, valuable<br> items or items requiring special attention?</div>
 
-<textarea style="height: 132px; width: 500px;" class="p-4">
+<textarea class="p-4 prop-form-textarea">
 </textarea>
 </div>
 
@@ -362,10 +363,10 @@
         <div style="color: #00A747; font-size: 20px;">Please let us know your contact details.</div>
        
     </div>
-    <input type="text" name="address" class="address-input m-2" placeholder="First Name" required>
-    <input type="text" name="address" class="address-input m-2" placeholder="Last Name" required>
-    <input type="text" name="address" class="address-input m-2" placeholder="Email Address" required>
-    <input type="text" name="address" class="address-input m-2" placeholder="Contact Details" required>
+    <input type="text" name="address" class="address-input m-2" placeholder="First Name*" required>
+    <input type="text" name="address" class="address-input m-2" placeholder="Last Name*" required>
+    <input type="text" name="address" class="address-input m-2" placeholder="Email Address*" required>
+    <input type="text" name="address" class="address-input m-2" placeholder="Contact Details*" required>
 
     <button class="findb-contact m-3">Submit Now</button>
     <small>By clicking 'see your results' you confirm that you agree to our terms and conditions and privacy policy</small>

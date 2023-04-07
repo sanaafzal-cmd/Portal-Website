@@ -1885,8 +1885,12 @@ display: none;
     width: 500px;
     height: 54px;
     border-radius: 8px;
-    border-color: #00A747;
-    padding-left: 35px;
+    border: 1px solid #00A747;
+    padding-left: 25px;
+  }
+
+  .address-input:focus, .date-input:focus{
+    outline-color: #00A747;
   }
   .pcode-input{
     width: 136px;
@@ -1898,5 +1902,75 @@ display: none;
     display: flex;
     gap: 3em;
   }
+  .hero-reloc {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#00A948;
+     font-size: 55px;
+     font-weight: 600;
+  }
+  @media screen and (max-width:786px) {
+    .hero-reloc {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .address-input{
+        width: 350px;
+    }  
+  }
+  .prop-name{
+    color: #00A948;
+    font-size: 15px;
+  }
+  .prop-form-textarea{
+    height: 132px;
+     width: 500px;
+     border: 1px dashed #00A747;
+     border-radius: 8px;
+  }
+  .prop-form-textarea:focus{
+    outline-color: #00A747;
+  }
+  .prop-fig{
+    width: 82px;
+    height: 82px;
+  }
   
+  @media screen and (max-width:786px) {
+    .prop-fig{
+        width: 75px;
+        height: 75px;
+      }
+      .prop-form-textarea{
+         width: 350px;
+      } 
+  }
+  .radio-color{
+    accent-color: #00A747;
+  }
+  .date-input{
+    width: 500px;
+    height: 54px;
+    border-radius: 8px;
+    border: 1px solid #00A747;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+ .address-input::placeholder{
+    color: #9A9A9A;
+    font-size: 13px;
+ }
+  @media screen and (max-width:786px) 
+  {
+    .date-input{
+        width: 350px;
+      }
+    
+  }
+  input[type=date]:invalid::-webkit-datetime-edit {
+    color: #9A9A9A;
+    font-size: 13px;
+}
 
