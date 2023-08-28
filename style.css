@@ -354,6 +354,11 @@ header nav ul li a{
 .search-heading span{
     color: #00A948;
 }
+@media screen and (max-width:768px){
+    .search-heading{
+        font-size: 15px;
+    }
+}
 .property-type{
     width: 160px;
     height: 49px;
@@ -427,6 +432,7 @@ input[type="submit"]{
 }
 
 
+
 .form-controls{
    /* background-color: #3D454E;*/
     width: 100%;
@@ -437,9 +443,8 @@ input[type="submit"]{
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px; */
-    
-     
 }
+
 .ft-container {
     padding-left: 10%;
     padding-right: 10%;
